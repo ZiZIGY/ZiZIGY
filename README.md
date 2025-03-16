@@ -60,7 +60,219 @@
 
 ## 💻 Skills
 
+<div align="center">
+
 ### Frontend
+  
+<table>
+  <tr>
+    <td>Vue.js</td>
+    <td>
+      <img src="https://progress-bar.dev/90/?width=500&color=42B883" alt="Vue.js 90%" />
+    </td>
+  </tr>
+  <tr>
+    <td>TypeScript / JavaScript</td>
+    <td>
+      <img src="https://progress-bar.dev/90/?width=500&color=4F46E5" alt="TypeScript / JavaScript 90%" />
+    </td>
+  </tr>
+  <tr>
+    <td>React</td>
+    <td>
+      <img src="https://progress-bar.dev/75/?width=500&color=61DAFB" alt="React 75%" />
+    </td>
+  </tr>
+  <tr>
+    <td>HTML5 / CSS3</td>
+    <td>
+      <img src="https://progress-bar.dev/90/?width=500&color=E34F26" alt="HTML5 / CSS3 90%" />
+    </td>
+  </tr>
+  <tr>
+    <td>SASS / SCSS</td>
+    <td>
+      <img src="https://progress-bar.dev/85/?width=500&color=CC6699" alt="SASS / SCSS 85%" />
+    </td>
+  </tr>
+  <tr>
+    <td>TailwindCSS</td>
+    <td>
+      <img src="https://progress-bar.dev/80/?width=500&color=38B2AC" alt="TailwindCSS 80%" />
+    </td>
+  </tr>
+</table>
+
+### Vue Ecosystem
+  
+<table>
+  <tr>
+    <td>Nuxt.js</td>
+    <td>
+      <img src="https://progress-bar.dev/85/?width=500&color=00DC82" alt="Nuxt.js 85%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Pinia</td>
+    <td>
+      <img src="https://progress-bar.dev/85/?width=500&color=FFD859" alt="Pinia 85%" />
+    </td>
+  </tr>
+  <tr>
+    <td>VueUse</td>
+    <td>
+      <img src="https://progress-bar.dev/85/?width=500&color=41B883" alt="VueUse 85%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Vue Router</td>
+    <td>
+      <img src="https://progress-bar.dev/90/?width=500&color=42B883" alt="Vue Router 90%" />
+    </td>
+  </tr>
+  <tr>
+    <td>TresJS (Vue)</td>
+    <td>
+      <img src="https://progress-bar.dev/70/?width=500&color=35495E" alt="TresJS 70%" />
+    </td>
+  </tr>
+</table>
+
+### Other Frameworks & Libraries
+  
+<table>
+  <tr>
+    <td>Next.js</td>
+    <td>
+      <img src="https://progress-bar.dev/60/?width=500&color=000000" alt="Next.js 60%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Redux</td>
+    <td>
+      <img src="https://progress-bar.dev/65/?width=500&color=764ABC" alt="Redux 65%" />
+    </td>
+  </tr>
+  <tr>
+    <td>React Router</td>
+    <td>
+      <img src="https://progress-bar.dev/65/?width=500&color=CA4245" alt="React Router 65%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Zustand</td>
+    <td>
+      <img src="https://progress-bar.dev/60/?width=500&color=FF4154" alt="Zustand 60%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Bitrix</td>
+    <td>
+      <img src="https://progress-bar.dev/70/?width=500&color=FF3333" alt="Bitrix 70%" />
+    </td>
+  </tr>
+</table>
+
+### Data Visualization & Animation
+  
+<table>
+  <tr>
+    <td>Chart.js</td>
+    <td>
+      <img src="https://progress-bar.dev/85/?width=500&color=FF6384" alt="Chart.js 85%" />
+    </td>
+  </tr>
+  <tr>
+    <td>GSAP</td>
+    <td>
+      <img src="https://progress-bar.dev/85/?width=500&color=88CE02" alt="GSAP 85%" />
+    </td>
+  </tr>
+  <tr>
+    <td>amCharts</td>
+    <td>
+      <img src="https://progress-bar.dev/75/?width=500&color=67B7DC" alt="amCharts 75%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Anime.js</td>
+    <td>
+      <img src="https://progress-bar.dev/75/?width=500&color=F75EEE" alt="Anime.js 75%" />
+    </td>
+  </tr>
+  <tr>
+    <td>D3.js</td>
+    <td>
+      <img src="https://progress-bar.dev/50/?width=500&color=F9A03C" alt="D3.js 50%" />
+    </td>
+  </tr>
+</table>
+
+### 3D & WebGL
+  
+<table>
+  <tr>
+    <td>Three.js</td>
+    <td>
+      <img src="https://progress-bar.dev/80/?width=500&color=000000" alt="Three.js 80%" />
+    </td>
+  </tr>
+  <tr>
+    <td>TresJS (Vue)</td>
+    <td>
+      <img src="https://progress-bar.dev/75/?width=500&color=42B883" alt="TresJS 75%" />
+    </td>
+  </tr>
+  <tr>
+    <td>React Three Fiber</td>
+    <td>
+      <img src="https://progress-bar.dev/60/?width=500&color=61DAFB" alt="React Three Fiber 60%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Pixi.js</td>
+    <td>
+      <img src="https://progress-bar.dev/75/?width=500&color=E91E63" alt="Pixi.js 75%" />
+    </td>
+  </tr>
+</table>
+
+### Tools & Others
+  
+<table>
+  <tr>
+    <td>Vite</td>
+    <td>
+      <img src="https://progress-bar.dev/90/?width=500&color=646CFF" alt="Vite 90%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Git</td>
+    <td>
+      <img src="https://progress-bar.dev/85/?width=500&color=F05032" alt="Git 85%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Node.js</td>
+    <td>
+      <img src="https://progress-bar.dev/60/?width=500&color=339933" alt="Node.js 60%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Jest / Testing Library</td>
+    <td>
+      <img src="https://progress-bar.dev/55/?width=500&color=C21325" alt="Jest / Testing Library 55%" />
+    </td>
+  </tr>
+  <tr>
+    <td>Docker</td>
+    <td>
+      <img src="https://progress-bar.dev/30/?width=500&color=2496ED" alt="Docker 30%" />
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ## 📊 GitHub Stats
 
