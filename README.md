@@ -20,12 +20,24 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/>
   <img src="https://camo.githubusercontent.com/237e20be5fcfd8f7133f43d126fc49fb29dec7631679938bdd2ecb8cbb2a610e/68747470733a2f2f766974652e6465762f6c6f676f2e737667" alt="vite" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg" alt="threejs" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40" height="40"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="tailwindcss" width="40" height="40"/>
+</p>
+
+## 🔄 State Management
+<p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/>
+  <img src="https://pinia.vuejs.org/logo.svg" alt="pinia" width="40" height="40"/>
+  <img src="https://zustand-demo.pmnd.rs/favicon.ico" alt="zustand" width="40" height="40"/>
+  <img src="https://jotai.org/favicon.svg" alt="jotai" width="40" height="40"/>
+  <img src="https://recoiljs.org/img/favicon.png" alt="recoil" width="40" height="40"/>
+</p>
+
+## 🚀 Frameworks
+<p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nuxtjs/nuxtjs-original.svg" alt="nuxtjs" width="40" height="40"/>
+  <img src="https://avatars.githubusercontent.com/u/77578415?s=200&v=4" alt="vueuse" width="40" height="40"/>
 </p>
 
 ## 🎨 Animation & Data Visualization
