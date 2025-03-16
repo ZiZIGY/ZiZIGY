@@ -60,29 +60,22 @@
 
 ## 💻 Skills
 
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=vue,ts,js,react,html,css,sass,tailwind,nuxtjs,vite,git,nodejs,threejs,docker&perline=7" />
+  </a>
+</p>
+
 ### Frontend
-<div align="center">
-  <img src="https://img.shields.io/static/v1?message=Vue.js&logo=vue.js&label=&color=42B883&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="vue logo"  />
-  <img src="https://img.shields.io/static/v1?message=90%&logo=&label=&color=gradient&logoColor=white&labelColor=&style=flat-square" height="7" width="300" alt="90%"  />
-  <br/>
-  <img src="https://img.shields.io/static/v1?message=TypeScript&logo=typescript&label=&color=3178C6&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="typescript logo"  />
-  <img src="https://img.shields.io/static/v1?message=90%&logo=&label=&color=gradient&logoColor=white&labelColor=&style=flat-square" height="7" width="300" alt="90%"  />
-  <br/>
-  <img src="https://img.shields.io/static/v1?message=React&logo=react&label=&color=61DAFB&logoColor=black&labelColor=&style=for-the-badge" height="25" alt="react logo"  />
-  <img src="https://img.shields.io/static/v1?message=75%&logo=&label=&color=gradient&logoColor=white&labelColor=&style=flat-square" height="7" width="250" alt="75%"  />
-  <br/>
-  <img src="https://img.shields.io/static/v1?message=HTML5&logo=html5&label=&color=E34F26&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="html5 logo"  />
-  <img src="https://img.shields.io/static/v1?message=90%&logo=&label=&color=gradient&logoColor=white&labelColor=&style=flat-square" height="7" width="300" alt="90%"  />
-</div>
+![Vue.js](https://img.shields.io/badge/Vue.js-90%25-42B883?style=flat-square&labelColor=35495E)
+![TypeScript](https://img.shields.io/badge/TypeScript-90%25-3178C6?style=flat-square&labelColor=black)
+![React](https://img.shields.io/badge/React-75%25-61DAFB?style=flat-square&labelColor=20232A)
+![HTML5/CSS3](https://img.shields.io/badge/HTML5%2FCSS3-90%25-E34F26?style=flat-square&labelColor=1572B6)
 
 ### Vue Ecosystem
-<div align="center">
-  <img src="https://img.shields.io/static/v1?message=Nuxt.js&logo=nuxt.js&label=&color=00DC82&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="nuxtjs logo"  />
-  <img src="https://img.shields.io/static/v1?message=85%&logo=&label=&color=gradient&logoColor=white&labelColor=&style=flat-square" height="7" width="280" alt="85%"  />
-  <br/>
-  <img src="https://img.shields.io/static/v1?message=Pinia&logo=vue.js&label=&color=FFD859&logoColor=black&labelColor=&style=for-the-badge" height="25" alt="pinia logo"  />
-  <img src="https://img.shields.io/static/v1?message=85%&logo=&label=&color=gradient&logoColor=white&labelColor=&style=flat-square" height="7" width="280" alt="85%"  />
-</div>
+![Nuxt.js](https://img.shields.io/badge/Nuxt.js-85%25-00DC82?style=flat-square&labelColor=2F495E)
+![Pinia](https://img.shields.io/badge/Pinia-85%25-FFD859?style=flat-square&labelColor=35495E)
+![VueUse](https://img.shields.io/badge/VueUse-85%25-41B883?style=flat-square&labelColor=35495E)
 
 ## 📊 GitHub Stats
 
