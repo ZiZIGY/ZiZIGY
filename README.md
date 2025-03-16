@@ -60,48 +60,65 @@
 
 ## 💻 Skills
 
+<div align="center">
+
 ### Frontend
-![Vue.js](https://img.shields.io/badge/Vue.js-90%25-42B883?style=for-the-badge&logo=vue.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-90%25-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-90%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-75%25-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-90%25-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-90%25-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SASS](https://img.shields.io/badge/SASS-85%25-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-80%25-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <a href="#"><img src="https://skillicons.dev/icons?i=vue" height="40" alt="vue" /><br/><img src="https://custom-icon-badges.demolab.com/badge/90%25-42B883?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=ts" height="40" alt="typescript" /><br/><img src="https://custom-icon-badges.demolab.com/badge/90%25-3178C6?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=js" height="40" alt="javascript" /><br/><img src="https://custom-icon-badges.demolab.com/badge/90%25-F7DF1E?style=flat-square&logo=percent&logoColor=black" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=react" height="40" alt="react" /><br/><img src="https://custom-icon-badges.demolab.com/badge/75%25-61DAFB?style=flat-square&logo=percent&logoColor=black" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=html" height="40" alt="html5" /><br/><img src="https://custom-icon-badges.demolab.com/badge/90%25-E34F26?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=css" height="40" alt="css3" /><br/><img src="https://custom-icon-badges.demolab.com/badge/90%25-1572B6?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=sass" height="40" alt="sass" /><br/><img src="https://custom-icon-badges.demolab.com/badge/85%25-CC6699?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=tailwind" height="40" alt="tailwindcss" /><br/><img src="https://custom-icon-badges.demolab.com/badge/80%25-38B2AC?style=flat-square&logo=percent&logoColor=white" /></a>
+</div>
 
 ### Vue Ecosystem
-![Nuxt.js](https://img.shields.io/badge/Nuxt.js-85%25-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
-![Pinia](https://img.shields.io/badge/Pinia-85%25-FFD859?style=for-the-badge&logo=vue.js&logoColor=black)
-![VueUse](https://img.shields.io/badge/VueUse-85%25-41B883?style=for-the-badge&logo=vue.js&logoColor=white)
-![Vue Router](https://img.shields.io/badge/Vue_Router-90%25-42B883?style=for-the-badge&logo=vue.js&logoColor=white)
-![TresJS](https://img.shields.io/badge/TresJS-70%25-35495E?style=for-the-badge&logo=vue.js&logoColor=white)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <a href="#"><img src="https://skillicons.dev/icons?i=nuxtjs" height="40" alt="nuxtjs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/85%25-00DC82?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://pinia.vuejs.org/logo.svg" height="40" alt="pinia" /><br/><img src="https://custom-icon-badges.demolab.com/badge/85%25-FFD859?style=flat-square&logo=percent&logoColor=black" /></a>
+  <a href="#"><img src="https://vueuse.org/favicon.svg" height="40" alt="vueuse" /><br/><img src="https://custom-icon-badges.demolab.com/badge/85%25-41B883?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://router.vuejs.org/logo.png" height="40" alt="vue-router" /><br/><img src="https://custom-icon-badges.demolab.com/badge/90%25-42B883?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://avatars.githubusercontent.com/u/119253150?s=200&v=4" height="40" alt="tresjs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/70%25-35495E?style=flat-square&logo=percent&logoColor=white" /></a>
+</div>
 
 ### Other Frameworks & Libraries
-![Next.js](https://img.shields.io/badge/Next.js-60%25-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-65%25-764ABC?style=for-the-badge&logo=redux&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-65%25-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Zustand](https://img.shields.io/badge/Zustand-60%25-FF4154?style=for-the-badge&logo=react&logoColor=white)
-![Bitrix](https://img.shields.io/badge/Bitrix-70%25-FF3333?style=for-the-badge&logo=1c-bitrix&logoColor=white)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <a href="#"><img src="https://skillicons.dev/icons?i=nextjs" height="40" alt="nextjs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/60%25-000000?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=redux" height="40" alt="redux" /><br/><img src="https://custom-icon-badges.demolab.com/badge/65%25-764ABC?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://reactrouter.com/favicon-light.png" height="40" alt="react-router" /><br/><img src="https://custom-icon-badges.demolab.com/badge/65%25-CA4245?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://zustand-demo.pmnd.rs/favicon.ico" height="40" alt="zustand" /><br/><img src="https://custom-icon-badges.demolab.com/badge/60%25-FF4154?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/1c_bitrix_logo.svg/768px-1c_bitrix_logo.svg.png" height="40" alt="bitrix" /><br/><img src="https://custom-icon-badges.demolab.com/badge/70%25-FF3333?style=flat-square&logo=percent&logoColor=white" /></a>
+</div>
 
 ### Data Visualization & Animation
-![Chart.js](https://img.shields.io/badge/Chart.js-85%25-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)
-![GSAP](https://img.shields.io/badge/GSAP-85%25-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
-![amCharts](https://img.shields.io/badge/amCharts-75%25-67B7DC?style=for-the-badge&logo=javascript&logoColor=white)
-![Anime.js](https://img.shields.io/badge/Anime.js-75%25-F75EEE?style=for-the-badge&logo=javascript&logoColor=white)
-![D3.js](https://img.shields.io/badge/D3.js-50%25-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <a href="#"><img src="https://www.chartjs.org/img/chartjs-logo.svg" height="40" alt="chartjs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/85%25-FF6384?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" height="40" alt="gsap" /><br/><img src="https://custom-icon-badges.demolab.com/badge/85%25-88CE02?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://www.amcharts.com/wp-content/uploads/2017/10/amcharts_light_transparent.png" height="40" alt="amcharts" /><br/><img src="https://custom-icon-badges.demolab.com/badge/75%25-67B7DC?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://animejs.com/documentation/assets/img/favicon.png" height="40" alt="animejs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/75%25-F75EEE?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=d3" height="40" alt="d3js" /><br/><img src="https://custom-icon-badges.demolab.com/badge/50%25-F9A03C?style=flat-square&logo=percent&logoColor=white" /></a>
+</div>
 
 ### 3D & WebGL
-![Three.js](https://img.shields.io/badge/Three.js-80%25-000000?style=for-the-badge&logo=three.js&logoColor=white)
-![TresJS](https://img.shields.io/badge/TresJS-75%25-42B883?style=for-the-badge&logo=vue.js&logoColor=white)
-![React Three Fiber](https://img.shields.io/badge/React_Three_Fiber-60%25-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Pixi.js](https://img.shields.io/badge/Pixi.js-75%25-E91E63?style=for-the-badge&logo=javascript&logoColor=white)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <a href="#"><img src="https://skillicons.dev/icons?i=threejs" height="40" alt="threejs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/80%25-000000?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://avatars.githubusercontent.com/u/119253150?s=200&v=4" height="40" alt="tresjs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/75%25-42B883?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://avatars.githubusercontent.com/u/45790596?s=200&v=4" height="40" alt="react-three-fiber" /><br/><img src="https://custom-icon-badges.demolab.com/badge/60%25-61DAFB?style=flat-square&logo=percent&logoColor=black" /></a>
+  <a href="#"><img src="https://pixijs.com/images/logo.svg" height="40" alt="pixijs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/75%25-E91E63?style=flat-square&logo=percent&logoColor=white" /></a>
+</div>
 
 ### Tools & Others
-![Vite](https://img.shields.io/badge/Vite-90%25-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Git](https://img.shields.io/badge/Git-85%25-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-60%25-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-30%25-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <a href="#"><img src="https://skillicons.dev/icons?i=vite" height="40" alt="vite" /><br/><img src="https://custom-icon-badges.demolab.com/badge/90%25-646CFF?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=git" height="40" alt="git" /><br/><img src="https://custom-icon-badges.demolab.com/badge/85%25-F05032?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=nodejs" height="40" alt="nodejs" /><br/><img src="https://custom-icon-badges.demolab.com/badge/60%25-339933?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=jest" height="40" alt="jest" /><br/><img src="https://custom-icon-badges.demolab.com/badge/55%25-C21325?style=flat-square&logo=percent&logoColor=white" /></a>
+  <a href="#"><img src="https://skillicons.dev/icons?i=docker" height="40" alt="docker" /><br/><img src="https://custom-icon-badges.demolab.com/badge/30%25-2496ED?style=flat-square&logo=percent&logoColor=white" /></a>
+</div>
+
+</div>
 
 ## 📊 GitHub Stats
 
