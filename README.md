@@ -76,16 +76,7 @@
 ## 📫 Connect With Me
 
 <p align="left">
-  <a href="https://linkedin.com/in/zizigy" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="linkedin" width="40" height="40"/>
-  </a>
-  <a href="https://twitter.com/zizigy_dev" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg" alt="twitter" width="40" height="40"/>
-  </a>
-  <a href="https://codepen.io/zizigy" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/codepen/codepen-plain.svg" alt="codepen" width="40" height="40"/>
-  </a>
-  <a href="mailto:zizigy.dev@gmail.com">
+  <a href="mailto:zizigydev@gmail.com">
     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="email" width="40" height="40"/>
   </a>
   <a href="https://t.me/zizigy" target="_blank">
