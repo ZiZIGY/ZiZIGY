@@ -60,219 +60,49 @@
 
 ## 💻 Skills
 
-<div align="center">
-
 ### Frontend
-  
-<table>
-  <tr>
-    <td>Vue.js</td>
-    <td>
-      <img src="https://progress-bar.dev/90/?width=500&color=42B883" alt="Vue.js 90%" />
-    </td>
-  </tr>
-  <tr>
-    <td>TypeScript / JavaScript</td>
-    <td>
-      <img src="https://progress-bar.dev/90/?width=500&color=4F46E5" alt="TypeScript / JavaScript 90%" />
-    </td>
-  </tr>
-  <tr>
-    <td>React</td>
-    <td>
-      <img src="https://progress-bar.dev/75/?width=500&color=61DAFB" alt="React 75%" />
-    </td>
-  </tr>
-  <tr>
-    <td>HTML5 / CSS3</td>
-    <td>
-      <img src="https://progress-bar.dev/90/?width=500&color=E34F26" alt="HTML5 / CSS3 90%" />
-    </td>
-  </tr>
-  <tr>
-    <td>SASS / SCSS</td>
-    <td>
-      <img src="https://progress-bar.dev/85/?width=500&color=CC6699" alt="SASS / SCSS 85%" />
-    </td>
-  </tr>
-  <tr>
-    <td>TailwindCSS</td>
-    <td>
-      <img src="https://progress-bar.dev/80/?width=500&color=38B2AC" alt="TailwindCSS 80%" />
-    </td>
-  </tr>
-</table>
+![Vue.js](https://img.shields.io/badge/Vue.js-90%25-42B883?style=for-the-badge&logo=vue.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-90%25-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-90%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-75%25-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-90%25-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-90%25-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-85%25-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-80%25-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ### Vue Ecosystem
-  
-<table>
-  <tr>
-    <td>Nuxt.js</td>
-    <td>
-      <img src="https://progress-bar.dev/85/?width=500&color=00DC82" alt="Nuxt.js 85%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Pinia</td>
-    <td>
-      <img src="https://progress-bar.dev/85/?width=500&color=FFD859" alt="Pinia 85%" />
-    </td>
-  </tr>
-  <tr>
-    <td>VueUse</td>
-    <td>
-      <img src="https://progress-bar.dev/85/?width=500&color=41B883" alt="VueUse 85%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Vue Router</td>
-    <td>
-      <img src="https://progress-bar.dev/90/?width=500&color=42B883" alt="Vue Router 90%" />
-    </td>
-  </tr>
-  <tr>
-    <td>TresJS (Vue)</td>
-    <td>
-      <img src="https://progress-bar.dev/70/?width=500&color=35495E" alt="TresJS 70%" />
-    </td>
-  </tr>
-</table>
+![Nuxt.js](https://img.shields.io/badge/Nuxt.js-85%25-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
+![Pinia](https://img.shields.io/badge/Pinia-85%25-FFD859?style=for-the-badge&logo=vue.js&logoColor=black)
+![VueUse](https://img.shields.io/badge/VueUse-85%25-41B883?style=for-the-badge&logo=vue.js&logoColor=white)
+![Vue Router](https://img.shields.io/badge/Vue_Router-90%25-42B883?style=for-the-badge&logo=vue.js&logoColor=white)
+![TresJS](https://img.shields.io/badge/TresJS-70%25-35495E?style=for-the-badge&logo=vue.js&logoColor=white)
 
 ### Other Frameworks & Libraries
-  
-<table>
-  <tr>
-    <td>Next.js</td>
-    <td>
-      <img src="https://progress-bar.dev/60/?width=500&color=000000" alt="Next.js 60%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Redux</td>
-    <td>
-      <img src="https://progress-bar.dev/65/?width=500&color=764ABC" alt="Redux 65%" />
-    </td>
-  </tr>
-  <tr>
-    <td>React Router</td>
-    <td>
-      <img src="https://progress-bar.dev/65/?width=500&color=CA4245" alt="React Router 65%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Zustand</td>
-    <td>
-      <img src="https://progress-bar.dev/60/?width=500&color=FF4154" alt="Zustand 60%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Bitrix</td>
-    <td>
-      <img src="https://progress-bar.dev/70/?width=500&color=FF3333" alt="Bitrix 70%" />
-    </td>
-  </tr>
-</table>
+![Next.js](https://img.shields.io/badge/Next.js-60%25-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-65%25-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-65%25-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-60%25-FF4154?style=for-the-badge&logo=react&logoColor=white)
+![Bitrix](https://img.shields.io/badge/Bitrix-70%25-FF3333?style=for-the-badge&logo=1c-bitrix&logoColor=white)
 
 ### Data Visualization & Animation
-  
-<table>
-  <tr>
-    <td>Chart.js</td>
-    <td>
-      <img src="https://progress-bar.dev/85/?width=500&color=FF6384" alt="Chart.js 85%" />
-    </td>
-  </tr>
-  <tr>
-    <td>GSAP</td>
-    <td>
-      <img src="https://progress-bar.dev/85/?width=500&color=88CE02" alt="GSAP 85%" />
-    </td>
-  </tr>
-  <tr>
-    <td>amCharts</td>
-    <td>
-      <img src="https://progress-bar.dev/75/?width=500&color=67B7DC" alt="amCharts 75%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Anime.js</td>
-    <td>
-      <img src="https://progress-bar.dev/75/?width=500&color=F75EEE" alt="Anime.js 75%" />
-    </td>
-  </tr>
-  <tr>
-    <td>D3.js</td>
-    <td>
-      <img src="https://progress-bar.dev/50/?width=500&color=F9A03C" alt="D3.js 50%" />
-    </td>
-  </tr>
-</table>
+![Chart.js](https://img.shields.io/badge/Chart.js-85%25-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-85%25-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+![amCharts](https://img.shields.io/badge/amCharts-75%25-67B7DC?style=for-the-badge&logo=javascript&logoColor=white)
+![Anime.js](https://img.shields.io/badge/Anime.js-75%25-F75EEE?style=for-the-badge&logo=javascript&logoColor=white)
+![D3.js](https://img.shields.io/badge/D3.js-50%25-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
 
 ### 3D & WebGL
-  
-<table>
-  <tr>
-    <td>Three.js</td>
-    <td>
-      <img src="https://progress-bar.dev/80/?width=500&color=000000" alt="Three.js 80%" />
-    </td>
-  </tr>
-  <tr>
-    <td>TresJS (Vue)</td>
-    <td>
-      <img src="https://progress-bar.dev/75/?width=500&color=42B883" alt="TresJS 75%" />
-    </td>
-  </tr>
-  <tr>
-    <td>React Three Fiber</td>
-    <td>
-      <img src="https://progress-bar.dev/60/?width=500&color=61DAFB" alt="React Three Fiber 60%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Pixi.js</td>
-    <td>
-      <img src="https://progress-bar.dev/75/?width=500&color=E91E63" alt="Pixi.js 75%" />
-    </td>
-  </tr>
-</table>
+![Three.js](https://img.shields.io/badge/Three.js-80%25-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![TresJS](https://img.shields.io/badge/TresJS-75%25-42B883?style=for-the-badge&logo=vue.js&logoColor=white)
+![React Three Fiber](https://img.shields.io/badge/React_Three_Fiber-60%25-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Pixi.js](https://img.shields.io/badge/Pixi.js-75%25-E91E63?style=for-the-badge&logo=javascript&logoColor=white)
 
 ### Tools & Others
-  
-<table>
-  <tr>
-    <td>Vite</td>
-    <td>
-      <img src="https://progress-bar.dev/90/?width=500&color=646CFF" alt="Vite 90%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Git</td>
-    <td>
-      <img src="https://progress-bar.dev/85/?width=500&color=F05032" alt="Git 85%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Node.js</td>
-    <td>
-      <img src="https://progress-bar.dev/60/?width=500&color=339933" alt="Node.js 60%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Jest / Testing Library</td>
-    <td>
-      <img src="https://progress-bar.dev/55/?width=500&color=C21325" alt="Jest / Testing Library 55%" />
-    </td>
-  </tr>
-  <tr>
-    <td>Docker</td>
-    <td>
-      <img src="https://progress-bar.dev/30/?width=500&color=2496ED" alt="Docker 30%" />
-    </td>
-  </tr>
-</table>
-
-</div>
+![Vite](https://img.shields.io/badge/Vite-90%25-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Git](https://img.shields.io/badge/Git-85%25-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-60%25-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-55%25-C21325?style=for-the-badge&logo=jest&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-30%25-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 ## 📊 GitHub Stats
 
