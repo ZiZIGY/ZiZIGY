@@ -101,7 +101,6 @@
 ![Vite](https://img.shields.io/badge/Vite-90%25-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-85%25-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-60%25-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-55%25-C21325?style=for-the-badge&logo=jest&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-30%25-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 ## 📊 GitHub Stats
