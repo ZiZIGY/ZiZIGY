@@ -24,12 +24,13 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="tailwindcss" width="40" height="40"/>
 </p>
 
-## 🔄 State Management
+## 🔄 State Management & Routing
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/>
   <img src="https://pinia.vuejs.org/logo.svg" alt="pinia" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuex/vuex-original.svg" alt="vuex" width="40" height="40"/>
   <img src="https://zustand-demo.pmnd.rs/favicon.ico" alt="zustand" width="40" height="40"/>
+  <img src="https://reactrouter.com/favicon-light.png" alt="react-router" width="40" height="40"/>
+  <img src="https://router.vuejs.org/logo.png" alt="vue-router" width="40" height="40"/>
 </p>
 
 ## 🚀 Frameworks
