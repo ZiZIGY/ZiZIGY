@@ -64,22 +64,12 @@
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ZiZIGY&show_icons=true&theme=radical" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ZiZIGY&theme=radical" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZiZIGY&layout=compact&theme=radical" alt="Top Languages" />
-</p>
-
-## 📫 Connect With Me
-
-<p align="left">
-  <a href="mailto:zizigydev@gmail.com">
-    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="email" width="40" height="40"/>
-  </a>
-  <a href="https://t.me/zizigy" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="telegram" width="40" height="40"/>
-  </a>
-</p>
+<div align="center">
+  
+  ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZiZIGY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117)
+  
+  ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ZiZIGY&theme=tokyonight&hide_border=true&background=0D1117)
+  
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ZiZIGY&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117)
+  
+</div>
