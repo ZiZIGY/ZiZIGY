@@ -42,6 +42,7 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg" alt="threejs" width="40" height="40"/>
   <img src="https://avatars.githubusercontent.com/u/45790596?s=200&v=4" alt="react-three-fiber" width="40" height="40"/>
   <img src="https://avatars.githubusercontent.com/u/119253150?s=200&v=4" alt="troisjs" width="40" height="40"/>
+  <img src="https://camo.githubusercontent.com/42dc538f40357607223bba77d263082f53d885ee54ae3956dcaf1851bab7f9c3/68747470733a2f2f66696c65732e706978696a732e646f776e6c6f61642f6272616e64696e672f706978696a732d6c6f676f2d7472616e73706172656e742d6461726b2e7376673f763d31" alt="pixijs" width="40" height="40"/>
 </p>
 
 ## 💻 Skills
