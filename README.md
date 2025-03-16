@@ -61,3 +61,34 @@
 ## 💻 Skills
 
 ### Frontend
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ZiZIGY&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ZiZIGY&theme=radical" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZiZIGY&layout=compact&theme=radical" alt="Top Languages" />
+</p>
+
+## 📫 Connect With Me
+
+<p align="left">
+  <a href="https://linkedin.com/in/zizigy" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="linkedin" width="40" height="40"/>
+  </a>
+  <a href="https://twitter.com/zizigy_dev" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg" alt="twitter" width="40" height="40"/>
+  </a>
+  <a href="https://codepen.io/zizigy" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/codepen/codepen-plain.svg" alt="codepen" width="40" height="40"/>
+  </a>
+  <a href="mailto:zizigy.dev@gmail.com">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="email" width="40" height="40"/>
+  </a>
+  <a href="https://t.me/zizigy" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="telegram" width="40" height="40"/>
+  </a>
+</p>
