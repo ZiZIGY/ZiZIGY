@@ -64,12 +64,10 @@
 
 ## 📊 GitHub Stats
 
+## 📊 GitHub Stats
+
 <div align="center">
-  
-  ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZiZIGY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117)
-  
-  ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ZiZIGY&theme=tokyonight&hide_border=true&background=0D1117)
-  
-  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ZiZIGY&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117)
-  
-</div>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ZiZIGY&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ZiZIGY&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ZiZIGY&theme=github_dark" />
+</div
