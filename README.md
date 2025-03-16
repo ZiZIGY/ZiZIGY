@@ -30,7 +30,6 @@
   <img src="https://pinia.vuejs.org/logo.svg" alt="pinia" width="40" height="40"/>
   <img src="https://zustand-demo.pmnd.rs/favicon.ico" alt="zustand" width="40" height="40"/>
   <img src="https://reactrouter.com/favicon-light.png" alt="react-router" width="40" height="40"/>
-  <img src="https://router.vuejs.org/logo.png" alt="vue-router" width="40" height="40"/>
 </p>
 
 ## 🚀 Frameworks
