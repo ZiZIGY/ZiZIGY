@@ -13,48 +13,9 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,vue,react,html,css,sass,tailwind,vite,nodejs,git&perline=11" />
+    <img src="https://skillicons.dev/icons?i=js,ts,vue,react,html,css,sass,tailwind,vite,nodejs,git,nextjs,nuxtjs,threejs" />
   </a>
 </p>
-
-## 🔄 State Management & Routing
-
-<p align="center">
-  <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" width="48" height="48" alt="Redux" /></a>
-  <a href="#"><img src="https://pinia.vuejs.org/logo.svg" width="48" height="48" alt="Pinia" /></a>
-  <a href="#"><img src="https://zustand-demo.pmnd.rs/favicon.ico" width="48" height="48" alt="Zustand" /></a>
-  <a href="#"><img src="https://reactrouter.com/favicon-light.png" width="48" height="48" alt="React Router" /></a>
-  <a href="#"><img src="https://router.vuejs.org/logo.png" width="48" height="48" alt="Vue Router" /></a>
-</p>
-
-## 🚀 Frameworks
-
-<p align="center">
-  <a href="#"><img src="https://skillicons.dev/icons?i=nextjs,nuxtjs" /></a>
-  <a href="#"><img src="https://avatars.githubusercontent.com/u/77578415?s=200&v=4" width="48" height="48" alt="VueUse" /></a>
-  <a href="#"><img src="https://remix.run/favicon-192.png" width="48" height="48" alt="Remix" /></a>
-  <a href="#"><img src="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/1c_bitrix_logo.svg/768px-1c_bitrix_logo.svg.png" width="48" height="48" alt="Bitrix" /></a>
-</p>
-
-## 🎨 Animation & Data Visualization
-
-<p align="center">
-  <a href="#"><img src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" width="48" height="48" alt="GSAP" /></a>
-  <a href="#"><img src="https://animejs.com/documentation/assets/img/favicon.png" width="48" height="48" alt="Anime.js" /></a>
-  <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" width="48" height="48" alt="D3.js" /></a>
-  <a href="#"><img src="https://www.chartjs.org/img/chartjs-logo.svg" width="48" height="48" alt="Chart.js" /></a>
-  <a href="#"><img src="https://www.amcharts.com/wp-content/uploads/2017/10/amcharts_light_transparent.png" width="48" height="48" alt="amCharts" /></a>
-</p>
-
-## 🎮 3D & WebGL
-
-<p align="center">
-  <a href="#"><img src="https://skillicons.dev/icons?i=threejs" /></a>
-  <a href="#"><img src="https://avatars.githubusercontent.com/u/45790596?s=200&v=4" width="48" height="48" alt="React Three Fiber" /></a>
-  <a href="#"><img src="https://avatars.githubusercontent.com/u/119253150?s=200&v=4" width="48" height="48" alt="TresJS" /></a>
-  <a href="#"><img src="https://pixijs.com/images/logo.svg" width="48" height="48" alt="PixiJS" /></a>
-</p>
-
 ## 💻 Skills
 
 <p align="center">
