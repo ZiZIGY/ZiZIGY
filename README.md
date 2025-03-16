@@ -15,26 +15,6 @@
   <a href="#"><img src="https://skillicons.dev/icons?i=js,ts,vue,react,html,css,sass,tailwind,vite,nodejs,git" /></a>
 </p>
 
-<details>
-  <summary>🔄 State Management & Frameworks</summary>
-  <p align="center">
-    <a href="#"><img src="https://skillicons.dev/icons?i=nextjs,nuxtjs" /></a>
-    <a href="#"><img src="https://pinia.vuejs.org/logo.svg" width="48" height="48" alt="Pinia" /></a>
-    <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" width="48" height="48" alt="Redux" /></a>
-    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/1c_bitrix_logo.svg/768px-1c_bitrix_logo.svg.png" width="48" height="48" alt="Bitrix" /></a>
-  </p>
-</details>
-
-<details>
-  <summary>🎨 Animation, Visualization & 3D</summary>
-  <p align="center">
-    <a href="#"><img src="https://skillicons.dev/icons?i=threejs" /></a>
-    <a href="#"><img src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" width="48" height="48" alt="GSAP" /></a>
-    <a href="#"><img src="https://www.chartjs.org/img/chartjs-logo.svg" width="48" height="48" alt="Chart.js" /></a>
-    <a href="#"><img src="https://avatars.githubusercontent.com/u/45790596?s=200&v=4" width="48" height="48" alt="React Three Fiber" /></a>
-    <a href="#"><img src="https://avatars.githubusercontent.com/u/119253150?s=200&v=4" width="48" height="48" alt="TresJS" /></a>
-  </p>
-</details>
 
 ### Frontend
 ![Vue.js](https://img.shields.io/badge/Vue.js-90%25-42B883?style=flat-square&labelColor=35495E)
