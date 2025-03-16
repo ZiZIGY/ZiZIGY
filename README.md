@@ -40,8 +40,8 @@
 ## 🎮 3D & WebGL
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg" alt="threejs" width="40" height="40"/>
-  <img src="https://drei.pmnd.rs/favicon.ico" alt="react-three-fiber" width="40" height="40"/>
-  <img src="https://troisjs.github.io/favicon.ico" alt="troisjs" width="40" height="40"/>
+  <img src="https://avatars.githubusercontent.com/u/45790596?s=200&v=4" alt="react-three-fiber" width="40" height="40"/>
+  <img src="https://avatars.githubusercontent.com/u/119253150?s=200&v=4" alt="troisjs" width="40" height="40"/>
 </p>
 
 ## 💻 Skills
