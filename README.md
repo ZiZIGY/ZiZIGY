@@ -1,4 +1,4 @@
-# Hi, I'm ZiZIGY 👋
+# Hi, I'm Alexander 👋
 
 ![Profile Views](https://komarev.com/ghpvc/?username=ZiZIGY&color=blueviolet)
 
