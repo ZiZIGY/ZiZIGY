@@ -3,6 +3,7 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=ZiZIGY&color=blueviolet)
 
 ## 👨‍💻 About Me
+
 - 🔭 Frontend developer specializing in **React** and **Vue.js**
 - 🎮 Creating experimental games and libraries in my free time
 - 🌱 Constantly learning new technologies and frameworks
@@ -10,6 +11,7 @@
 - 🚀 Love building interactive and responsive user interfaces
 
 ## 🛠️ My Tech Stack
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
@@ -25,6 +27,7 @@
 </p>
 
 ## 🔄 State Management & Routing
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/>
   <img src="https://pinia.vuejs.org/logo.svg" alt="pinia" width="40" height="40"/>
@@ -33,6 +36,7 @@
 </p>
 
 ## 🚀 Frameworks
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nuxtjs/nuxtjs-original.svg" alt="nuxtjs" width="40" height="40"/>
@@ -42,6 +46,7 @@
 </p>
 
 ## 🎨 Animation & Data Visualization
+
 <p align="left">
   <img src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" alt="gsap" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/juliangarnier/anime/master/assets/images/animejs-v4-logo-animation.gif" alt="animejs" width="80" height="40"/>
@@ -51,6 +56,7 @@
 </p>
 
 ## 🎮 3D & WebGL
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg" alt="threejs" width="40" height="40"/>
   <img src="https://avatars.githubusercontent.com/u/45790596?s=200&v=4" alt="react-three-fiber" width="40" height="40"/>
