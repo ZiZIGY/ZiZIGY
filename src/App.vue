@@ -2,6 +2,7 @@
   import { onMounted } from 'vue';
   import Header from './components/App/Header/Header.vue';
   import HeroSection from './components/Sections/HeroSection';
+  import AboutSection from './components/Sections/AboutSection';
 
   // Устанавливаем темную тему по умолчанию
   onMounted(() => {
@@ -14,6 +15,7 @@
     <Header />
     <main>
       <HeroSection />
+      <AboutSection />
       <!-- Здесь будут другие секции -->
     </main>
   </div>
