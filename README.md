@@ -40,7 +40,6 @@
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nuxtjs/nuxtjs-original.svg" alt="nuxtjs" width="40" height="40"/>
-  <img src="https://avatars.githubusercontent.com/u/77578415?s=200&v=4" alt="vueuse" width="40" height="40"/>
   <img src="https://remix.run/favicon-192.png" alt="remix" width="40" height="40"/>
   <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/1c_bitrix_logo.svg/768px-1c_bitrix_logo.svg.png" alt="bitrix" width="40" height="40"/>
 </p>
