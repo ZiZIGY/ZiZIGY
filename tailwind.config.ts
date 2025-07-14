@@ -19,6 +19,7 @@ export default {
       animation: {
         'gradient-x': 'gradient-x 15s ease infinite',
         float: 'float 6s ease-in-out infinite',
+        glow: 'glow var(--duration, 10s) ease-in-out infinite',
       },
       keyframes: {
         'gradient-x': {
@@ -34,6 +35,12 @@ export default {
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-20px)' },
+        },
+        glow: {
+          '0%, 100%': { backgroundPosition: '0% 0%' },
+          '25%': { backgroundPosition: '100% 0%' },
+          '50%': { backgroundPosition: '100% 100%' },
+          '75%': { backgroundPosition: '0% 100%' },
         },
       },
     },

@@ -18,18 +18,22 @@
         'CSS3',
         'Sass',
       ],
+      color: '#4f9eff',
     },
     {
       title: 'State & Routing',
       items: ['Redux', 'Pinia', 'Zustand', 'React Router'],
+      color: '#10b981',
     },
     {
       title: 'Frameworks',
       items: ['Next.js', 'Nuxt.js', 'Remix', 'Bitrix'],
+      color: '#f59e0b',
     },
     {
       title: 'Animation & 3D',
       items: ['GSAP', 'AnimeJS', 'D3.js', 'ChartJS', 'ThreeJS', 'PixiJS'],
+      color: '#ec4899',
     },
   ];
 
@@ -79,6 +83,7 @@
           :key="index"
           :title="category.title"
           :items="category.items"
+          :color="category.color"
           class="tech-category"
         />
       </div>

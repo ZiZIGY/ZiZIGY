@@ -1,9 +1,11 @@
 <script setup lang="ts">
+  import { GlowBorder } from '@/components/UI/GlowBorder';
   import { defineProps } from 'vue';
 
   defineProps<{
     title: string;
     items: string[];
+    color?: string;
   }>();
 </script>
 
@@ -11,7 +13,10 @@
   <div
     class="tech-category p-6 rounded-lg bg-black/20 backdrop-blur-sm border border-white/5"
   >
-    <h4 class="category-title text-lg font-bold mb-4">
+    <h4
+      class="category-title text-lg font-bold mb-4"
+      :style="{ color }"
+    >
       {{ title }}
     </h4>
 
@@ -21,6 +26,7 @@
         :key="i"
         class="tech-tag px-3 py-1.5 bg-white/15 backdrop-blur-sm rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
       >
+        <GlowBorder :color="color" />
         {{ tech }}
       </span>
     </div>
