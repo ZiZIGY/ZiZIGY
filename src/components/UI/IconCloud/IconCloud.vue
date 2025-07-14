@@ -1,8 +1,8 @@
 <template>
   <canvas
     ref="canvasRef"
-    width="300"
-    height="300"
+    :width="props.width || 300"
+    :height="props.height || 300"
     :class="cn('rounded-lg', $props.class)"
     role="img"
     aria-label="Interactive 3D Image Cloud"
@@ -55,8 +55,8 @@
 
     const newImageCanvases = images.map((url, idx) => {
       const offscreen = document.createElement('canvas');
-      offscreen.width = 40;
-      offscreen.height = 40;
+      offscreen.width = 50; // Увеличиваем размер иконок
+      offscreen.height = 50;
       const offCtx = offscreen.getContext('2d');
       if (!offCtx) return offscreen;
 
@@ -66,14 +66,14 @@
       img.onload = () => {
         offCtx.clearRect(0, 0, offscreen.width, offscreen.height);
 
-        // circular clipping
-        offCtx.beginPath();
-        offCtx.arc(20, 20, 20, 0, Math.PI * 2);
-        offCtx.closePath();
-        offCtx.clip();
+        // Убираем круглую обрезку
+        // offCtx.beginPath();
+        // offCtx.arc(20, 20, 20, 0, Math.PI * 2);
+        // offCtx.closePath();
+        // offCtx.clip();
 
-        // draw the image
-        offCtx.drawImage(img, 0, 0, 40, 40);
+        // draw the image с небольшими отступами для лучшего вида
+        offCtx.drawImage(img, 5, 5, 40, 40);
         imagesLoadedRef.value[idx] = true;
       };
 
@@ -200,17 +200,23 @@
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
+    // Начальная анимация вращения
+    rotation.x = 0.2;
+    rotation.y = 0.5;
+
     function animate() {
       ctx?.clearRect(0, 0, canvas?.width || 0, canvas?.height || 0);
 
-      const centerX = canvas?.width || 0 / 2;
-      const centerY = canvas?.height || 0 / 2;
+      // Исправление расчета центра
+      const centerX = (canvas?.width || 0) / 2;
+      const centerY = (canvas?.height || 0) / 2;
+
       const dx = mousePos.x - centerX;
       const dy = mousePos.y - centerY;
       const maxDistance = Math.sqrt(centerX * centerX + centerY * centerY);
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      const speed = 0.003 + (distance / maxDistance) * 0.01;
+      const speed = 0.005 + (distance / maxDistance) * 0.01; // Увеличиваем базовую скорость
 
       if (targetRotation.value) {
         const {
@@ -255,7 +261,7 @@
         ctx!.globalAlpha = opacity;
 
         if (imageCanvasesRef.value[index] && imagesLoadedRef.value[index]) {
-          ctx?.drawImage(imageCanvasesRef.value[index], -20, -20, 40, 40);
+          ctx?.drawImage(imageCanvasesRef.value[index], -25, -25, 50, 50);
         }
         ctx?.restore();
       });

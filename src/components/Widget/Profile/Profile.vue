@@ -13,7 +13,7 @@
     showOrbits?: boolean;
   }
 
-  const props = withDefaults(defineProps<Props>(), {
+  withDefaults(defineProps<Props>(), {
     size: 320,
     imageUrl: '',
     imageAlt: 'Profile Avatar',
@@ -107,16 +107,31 @@
         animationDelay: `${elem.delay}s`,
         animationDuration: `${elem.duration}s`,
       }"
-    ></div>
+    />
 
     <!-- Кольца с точками -->
     <div class="orbit-ring" />
+
+    <div class="square" />
+
+    <div class="line" />
 
     <div class="orbit-ring orbit-ring-2" />
   </div>
 </template>
 
 <style scoped>
+  .line {
+    border-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    height: 200%;
+    width: 1px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    transform: rotate(45deg);
+    inset: 0;
+    margin: auto;
+  }
+
   .glassmorphism-glow {
     position: absolute;
     width: 120%;
@@ -135,6 +150,13 @@
     filter: blur(25px);
     animation: rotate 10s infinite linear;
     z-index: 10;
+  }
+
+  .square {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: rotate(45deg);
   }
 
   .avatar {

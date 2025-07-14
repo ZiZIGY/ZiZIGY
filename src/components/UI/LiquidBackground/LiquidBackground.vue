@@ -17,12 +17,10 @@
     Renderer,
     Program,
     Mesh,
-    Color,
     Triangle,
     type OGLRenderingContext,
   } from 'ogl';
   import { cn } from '@/lib/utils';
-  import { hexToRgb } from './utils';
   import { shaders } from './shaders';
 
   const props = defineProps<{

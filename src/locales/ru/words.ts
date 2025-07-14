@@ -23,4 +23,29 @@ export const about = {
       'Написание технических статей',
     ],
   },
+  stats: {
+    experience: {
+      title: 'Опыт работы',
+      value: '5+',
+      suffix: 'лет',
+    },
+    articles: {
+      title: 'Публикации',
+      value: '15+',
+      suffix: 'статей',
+    },
+    projects: {
+      title: 'Проекты',
+      value: '30+',
+      suffix: 'завершено',
+    },
+    clients: {
+      title: 'Клиенты',
+      value: '20+',
+      suffix: 'компаний',
+    },
+  },
+  techStack: {
+    title: 'Мой технологический стек',
+  },
 };

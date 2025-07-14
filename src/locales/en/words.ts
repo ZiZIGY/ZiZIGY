@@ -23,4 +23,29 @@ export const about = {
       'Writing technical articles',
     ],
   },
+  stats: {
+    experience: {
+      title: 'Experience',
+      value: '5+',
+      suffix: 'years',
+    },
+    articles: {
+      title: 'Publications',
+      value: '15+',
+      suffix: 'articles',
+    },
+    projects: {
+      title: 'Projects',
+      value: '30+',
+      suffix: 'completed',
+    },
+    clients: {
+      title: 'Clients',
+      value: '20+',
+      suffix: 'companies',
+    },
+  },
+  techStack: {
+    title: 'My Technology Stack',
+  },
 };
