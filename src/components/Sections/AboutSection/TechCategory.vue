@@ -26,7 +26,10 @@
         :key="i"
         class="tech-tag px-3 py-1.5 bg-white/15 backdrop-blur-sm rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
       >
-        <GlowBorder :color="color" />
+        <GlowBorder
+          :color="color"
+          :border-radius="99999"
+        />
         {{ tech }}
       </span>
     </div>

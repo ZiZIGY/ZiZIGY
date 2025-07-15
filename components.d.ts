@@ -12,6 +12,7 @@ declare module 'vue' {
     AnimatedTooltip: typeof import('./src/components/UI/Tooltip/AnimatedTooltip.vue')['default']
     Button: typeof import('./src/components/UI/Button/Button.vue')['default']
     CardSpotlight: typeof import('./src/components/UI/СardSpotlight/CardSpotlight.vue')['default']
+    CardWrapper: typeof import('./src/components/UI/Decoration/CardWrapper.vue')['default']
     CirclePreloader: typeof import('./src/components/UI/Preloader/CirclePreloader.vue')['default']
     FlipWords: typeof import('./src/components/UI/FlipWords/FlipWords.vue')['default']
     GeometricLink: typeof import('./src/components/UI/Decoration/GeometricLink.vue')['default']

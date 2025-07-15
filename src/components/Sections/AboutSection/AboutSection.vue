@@ -42,19 +42,6 @@
       delay: 0.5,
     });
 
-    // Анимация карточек
-    if (cardsRef.value) {
-      const cards = cardsRef.value.querySelectorAll('.stat-card');
-      gsap.from(cards, {
-        opacity: 0,
-        y: 30,
-        stagger: 0.15,
-        duration: 0.8,
-        delay: 0.6,
-      });
-    }
-
-    // Анимация технологий
     if (stackRef.value) {
       const techItems = stackRef.value.querySelectorAll('.tech-category');
       gsap.from(techItems, {
@@ -74,7 +61,6 @@
     class="py-24 relative overflow-hidden"
   >
     <div class="container mx-auto px-4 relative z-10">
-      <!-- Оборачиваем весь контент в один GlassmorphismCard -->
       <GlassmorphismCard
         class="p-10"
         gradientStart="rgba(255, 255, 255, 0.12)"

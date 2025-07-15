@@ -1,20 +1,10 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n';
   import StatCard from './StatCard.vue';
-  import { onMounted, ref } from 'vue';
+  import { ref } from 'vue';
 
   const { t } = useI18n();
   const statsGridRef = ref<HTMLElement | null>(null);
-
-  onMounted(() => {
-    if (!statsGridRef.value) return;
-
-    const cards = statsGridRef.value.querySelectorAll('.stat-card');
-    cards.forEach((card, index) => {
-      card.classList.add('animate-in');
-      (card as HTMLElement).style.animationDelay = `${index * 0.1}s`;
-    });
-  });
 </script>
 
 <template>
@@ -52,11 +42,6 @@
 <style scoped>
   .stats-grid {
     padding: 1.5rem 0;
-  }
-
-  .stat-card {
-    opacity: 0;
-    transform: translateY(30px);
   }
 
   .stat-card.animate-in {

@@ -22,32 +22,32 @@
         return '#64748b';
     }
   });
+
+  import * as Decoration from '@/components/UI/Decoration';
 </script>
 
 <template>
-  <div class="stat-card">
-    <div class="stat-content">
-      <div
-        class="value-circle"
-        :style="{ borderColor: getAccentColor }"
-      >
+  <Decoration.CardWrapper>
+    <div class="stat-card">
+      <div class="stat-content">
         <div
-          class="value-text"
-          :style="{ color: getAccentColor }"
-          >{{ value }}</div
+          class="value-circle relative"
+          :style="{ borderColor: getAccentColor }"
         >
-        <div
-          class="suffix-text"
-          :style="{ color: getAccentColor }"
-          >{{ suffix }}</div
-        >
-      </div>
+          <div
+            class="value-text"
+            :style="{ color: getAccentColor }"
+          >
+            {{ value }}
+          </div>
+        </div>
 
-      <div class="title-container">
-        <div class="title-text">{{ title }}</div>
+        <div class="title-container">
+          <div class="title-text">{{ title }}</div>
+        </div>
       </div>
     </div>
-  </div>
+  </Decoration.CardWrapper>
 </template>
 
 <style scoped>
@@ -56,10 +56,10 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 16px;
-    background: rgba(15, 23, 42, 0.5);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* background: rgba(15, 23, 42, 0.5); */
+    /* backdrop-filter: blur(10px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
     overflow: hidden;
     transition: all 0.3s ease;
   }
@@ -87,7 +87,6 @@
     border-radius: 50%;
     border: 2px solid;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #1a1f2e;
@@ -96,66 +95,11 @@
   }
 
   /* Пунктирный круг через псевдоэлемент */
-  .value-circle::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 2px dashed rgba(255, 255, 255, 0.5);
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 0.5;
-    animation: rotate 20s linear infinite;
-  }
-
-  /* Линия слева */
-  .value-circle::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -100px;
-    width: 100px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: -1;
-  }
-
-  /* Дополнительные линии через псевдоэлементы карточки */
-  .stat-card::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -50px;
-    width: 100px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: 1;
-  }
-
-  .stat-card::after {
-    content: '';
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    width: 1px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: 1;
-    transform: translateX(-50%);
-  }
 
   .value-text {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1;
-  }
-
-  .suffix-text {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 0.25rem;
   }
 
   .title-container {
