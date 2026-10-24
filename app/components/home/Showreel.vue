@@ -16,18 +16,16 @@ const hint = useTemplateRef<HTMLElement>('hint')
 
 /*
  * The showreel is a strip of film running through the screen with the scroll: a countdown leader,
- * one frame per word of the reel — each with its own little scene — and an end card. The frame in
- * the middle is in focus and plays; its neighbours are dimmed. Everything is scrubbed: the scroll
- * is the projector.
+ * then one frame per word of the reel, each with its own little scene. The frame in the middle is in
+ * focus and plays; its neighbours are dimmed. Everything is scrubbed: the scroll is the projector.
  */
-type Scene = 'leader' | 'code' | 'motion' | 'cube' | 'fps' | 'again' | 'end'
+type Scene = 'leader' | 'code' | 'motion' | 'cube' | 'fps' | 'again'
 interface Frame { scene: Scene, word?: string }
 
 const SCENES: Scene[] = ['code', 'motion', 'cube', 'fps', 'again']
 const frames = computed<Frame[]>(() => [
   { scene: 'leader' },
   ...tList('showreel.words').map((word, index) => ({ scene: SCENES[index % SCENES.length]!, word })),
-  { scene: 'end' },
 ])
 
 // a space in a word ("60 fps") would collapse inside its own inline-block letter box
@@ -249,15 +247,6 @@ useGsap(({ isDesktop, reduceMotion }) => {
                 v-else-if="frame.scene === 'again'"
                 class="again-sun"
               />
-
-              <!-- end card -->
-              <span
-                v-if="frame.scene === 'end'"
-                class="end-card"
-              >
-                <span class="end-mark">{{ site.brand }}</span>
-                <span class="end-note">{{ t('showreel.end') }}</span>
-              </span>
 
               <span
                 v-if="frame.word"
@@ -638,34 +627,6 @@ useGsap(({ isDesktop, reduceMotion }) => {
   background: radial-gradient(circle at 50% 40%, #ff7a4d, var(--color-signal) 60%);
   translate: -50% calc(-30% + (1 - var(--focus)) * 70%);
   opacity: 0.9;
-}
-
-// end card
-.end-card {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-content: center;
-  justify-items: center;
-  gap: 4cqh;
-  text-align: center;
-  opacity: var(--focus);
-}
-
-.end-mark {
-  font-family: var(--font-display);
-  font-size: 24cqh;
-  font-weight: 700;
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-}
-
-.end-note {
-  font-size: max(0.8125rem, 3.4cqh);
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgb(242 241 237 / 0.6);
 }
 
 // ——— the player row under the film ———

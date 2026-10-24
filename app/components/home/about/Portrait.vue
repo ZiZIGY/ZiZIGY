@@ -26,12 +26,6 @@ const handles = [
   { at: [822, 1000], a: [827.5, 965], b: [816.5, 1035], f: 0.839 },
 ] as const
 const SAMPLE = { x: 450, y: 700, hex: '#BCAFA2' }
-const swatches = [
-  { id: 'hair', hex: '#48342A' },
-  { id: 'skin', hex: '#B58572' },
-  { id: 'hoodie', hex: '#BCAFA2' },
-  { id: 'wall', hex: '#B8B4AF' },
-] as const
 
 const MOTION = 'M90 940 C60 420 300 40 560 50 S900 220 900 420'
 const tracks = [
@@ -73,7 +67,6 @@ function setProgress(value: number) {
     '--sel': span(design, 0.38, 0.62),
     '--pen': span(design, 0.75, 0.88),
     '--drop': back(span(design, 0.9, 0.96)),
-    '--styles': span(design, 0.86, 1),
     '--cx': cx,
     '--cy': cy,
     '--b': back(span(motion, 0.25, 0.7)),
@@ -232,20 +225,6 @@ function captionEnter(el: Element, done: () => void) {
         <b>{{ SAMPLE.hex }}</b>
       </span>
 
-      <span class="styles">
-        <b class="styles-title">{{ t('about.portrait.styles') }}</b>
-        <span
-          v-for="(swatch, index) in swatches"
-          :key="swatch.id"
-          class="styles-row"
-          :style="{ '--i': index }"
-        >
-          <i :style="{ background: swatch.hex }" />
-          {{ t(`about.portrait.swatches.${swatch.id}`) }}
-          <small>{{ swatch.hex }}</small>
-        </span>
-      </span>
-
       <span class="cursor">
         <svg
           viewBox="0 0 16 16"
@@ -393,7 +372,6 @@ function captionEnter(el: Element, done: () => void) {
   --sel: 0;
   --pen: 0;
   --drop: 0;
-  --styles: 0;
   --tag: 0;
   --cx: 32.5;
   --cy: 5.5;
@@ -630,52 +608,6 @@ function captionEnter(el: Element, done: () => void) {
   height: 3.4em;
   border-radius: 50% 50% 50% 0;
   box-shadow: 0 0 0 0.2em #fff, 0 0 0 0.32em var(--color-signal), 0 0.6em 1.2em -0.4em rgb(17 17 19 / 0.45);
-}
-
-.styles {
-  position: absolute;
-  left: 3%;
-  top: 14%;
-  display: grid;
-  gap: 0.45em;
-  width: 13.5em;
-  padding: 0.8em 0.9em 0.9em;
-  border-radius: 0.9em;
-  background: #fff;
-  box-shadow: 0 0 0 1px rgb(17 17 19 / 0.08), 0 0.8em 1.6em -0.8em rgb(17 17 19 / 0.35);
-  color: var(--color-ink);
-  font-size: 0.95em;
-  opacity: clamp(0, var(--styles) * 4, 1);
-  translate: calc((1 - clamp(0, var(--styles) * 2, 1)) * -1.2em) 0;
-}
-
-.styles-title {
-  font-size: 0.8em;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgb(17 17 19 / 0.5);
-}
-
-.styles-row {
-  display: grid;
-  grid-template-columns: 1.4em 1fr auto;
-  align-items: center;
-  gap: 0.55em;
-  font-weight: 600;
-  opacity: clamp(0, (var(--styles) - 0.15 - var(--i) * 0.18) * 6, 1);
-
-  i {
-    width: 1.4em;
-    height: 1.4em;
-    border-radius: 50%;
-    box-shadow: inset 0 0 0 1px rgb(17 17 19 / 0.12);
-  }
-
-  small {
-    font: 600 0.85em/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-    color: rgb(17 17 19 / 0.55);
-  }
 }
 
 .cursor {

@@ -31,7 +31,7 @@ useGsap(({ isDesktop, reduceMotion }) => {
   const show = (value: number) => {
     portrait.value?.setProgress(value)
     // chapter n plays while the reading position goes from n - 1 to n, so its caption shows from the start
-    chapter.value = value < 0.05 ? 0 : Math.min(3, Math.ceil(value - 0.05))
+    chapter.value = value < 0.1 ? 0 : Math.min(3, Math.ceil(value - 0.1))
   }
   const snap = (value: number) => (reduceMotion ? Math.round(value) : value)
 
@@ -103,8 +103,6 @@ useGsap(({ isDesktop, reduceMotion }) => {
 </template>
 
 <style scoped lang="scss">
-/* ——— principles ——— */
-
 // on desktop each principle gets a screen's worth of reading; the one being read is in focus
 .principle {
   display: grid;

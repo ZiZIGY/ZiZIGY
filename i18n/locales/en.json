@@ -38,7 +38,7 @@
   },
   "hero": {
     "status": "Open to new projects",
-    "role": "Alexandr Zhukov — middle frontend · Vue, Nuxt, TypeScript",
+    "role": "Alexandr Zhukov — middle frontend+ · Vue, Nuxt, TypeScript",
     "title": "I make websites you’ll want to scroll again and again.",
     "line1": "I make websites",
     "line2": "you’ll want to scroll",
@@ -61,8 +61,7 @@
       "Again"
     ],
     "hint": "Scroll — the film will roll",
-    "frame": "Frame",
-    "end": "The end"
+    "frame": "Frame"
   },
   "projects": {
     "title": "Selected work",
@@ -224,14 +223,7 @@
     ],
     "jar": "Tools — throw them",
     "portrait": {
-      "cursor": "Alexandr",
-      "styles": "Colours",
-      "swatches": {
-        "hair": "Hair",
-        "skin": "Skin",
-        "hoodie": "Hoodie",
-        "wall": "Wall"
-      }
+      "cursor": "Alexandr"
     }
   },
   "experience": {
@@ -260,7 +252,7 @@
       },
       "bintaga": {
         "company": "Bintaga Home",
-        "role": "Middle frontend developer",
+        "role": "Middle frontend+ developer",
         "highlights": [
           "E-commerce migration from 1C-Bitrix to Nuxt 3 + Go: 50,000+ products, pages 40% faster",
           "3D configurator on TresJS with 100+ options, and a CMS with 8 WYSIWYG editors",
@@ -269,7 +261,7 @@
       },
       "ventra": {
         "company": "Ventra · client: Akrikhin",
-        "role": "Middle frontend developer",
+        "role": "Middle frontend+ developer",
         "highlights": [
           "SSO frontend from scratch on Nuxt 4 + shadcn-vue: one entry point for the company’s products",
           "Accounts, admin panels and CRMs for pharma, including a pharmacy network of 2,000+ users",
