@@ -9,13 +9,17 @@ const root = useTemplateRef<HTMLElement>('root')
 const count = useTemplateRef<HTMLElement>('count')
 const github = site.github
 
+// the number in "(04)": Vue renders it, the intro only counts it up. Written straight into the DOM
+// it got stuck at "(00)" whenever the intro was reverted mid-way (a breakpoint change, a hot reload),
+// because Vue saw no change to re-render
+const shown = ref(projects.length)
+
 useSectionSpy(root, 'projects')
 
 useGsap(({ reduceMotion }) => {
   const el = root.value
   if (!el || reduceMotion) return
 
-  // (00) → (04)
   const counter = { value: 0 }
   gsap.to(counter, {
     value: projects.length,
@@ -24,13 +28,10 @@ useGsap(({ reduceMotion }) => {
     snap: { value: 1 },
     scrollTrigger: { trigger: count.value, start: 'top 85%', once: true },
     onUpdate: () => {
-      if (count.value) count.value.textContent = `(${String(counter.value).padStart(2, '0')})`
+      shown.value = counter.value
     },
   })
 
-  // Sticky items can't be triggers: ScrollTrigger measures an element where it is at refresh time, and a
-  // stuck card reports its stuck position. Every point is derived from the (static) stack instead:
-  // item i starts at stack top + the heights and gaps of the items before it.
   const stack = el.querySelector<HTMLElement>('.stack')!
   const items = gsap.utils.toArray<HTMLElement>('.stack-item', stack)
   const offsetOf = (index: number) => items
@@ -48,10 +49,6 @@ useGsap(({ reduceMotion }) => {
   items.forEach((item, index) => {
     if (index === items.length - 1) return
 
-    // covered: over the next card's whole slide (from entering at the bottom to landing) this one steps
-    // back — scale and shade only, no tilt, linear and locked to the scroll (Lenis already smooths the
-    // wheel; an extra scrub lag made the card trail the page and then catch up in a jerk).
-    // Once it is fully buried its CSS loops pause (data-covered, see main.css).
     gsap.timeline({
       defaults: { ease: 'none' },
       scrollTrigger: {
@@ -63,6 +60,10 @@ useGsap(({ reduceMotion }) => {
       .to(item.querySelector('.project-card'), { scale: 0.92, transformOrigin: '50% 0%' }, 0)
       .to(item.querySelector('.project-shade'), { opacity: 0.45 }, 0)
   })
+
+  return () => {
+    shown.value = projects.length
+  }
 }, root)
 </script>
 
@@ -82,7 +83,7 @@ useGsap(({ reduceMotion }) => {
           <sup
             ref="count"
             class="absolute top-[0.05em] right-0 font-display text-[0.26em] font-semibold tracking-normal text-signal"
-          >({{ String(projects.length).padStart(2, '0') }})</sup>
+          >({{ String(shown).padStart(2, '0') }})</sup>
         </h2>
         <a
           :href="github"

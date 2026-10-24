@@ -1,13 +1,8 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
-/*
- * An easing editor: drag the two handles and the ball below rides the curve you drew (a faint ghost
- * keeps linear time for comparison). The presets glide the handles to a few curves used on this site.
- */
 const { t } = useI18n()
 
-// the plot in the 120×100 viewBox: x 10…110 is time, y 90…10 is progress 0…1
 const X0 = 10
 const W = 100
 const Y0 = 90
@@ -41,7 +36,6 @@ function drag(event: PointerEvent) {
   const rect = svg.value.getBoundingClientRect()
   const vx = ((event.clientX - rect.left) / rect.width) * 120
   const vy = ((event.clientY - rect.top) / rect.height) * 100
-  // time can't run backwards (x stays in 0…1); progress may overshoot a little either way
   const x = gsap.utils.clamp(0, 1, (vx - X0) / W)
   const y = gsap.utils.clamp(-0.5, 1.5, (Y0 - vy) / H)
   if (dragging === 1) Object.assign(handles, { x1: x, y1: y })

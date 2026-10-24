@@ -3,7 +3,6 @@ import { ArrowUpRight } from '@lucide/vue'
 </script>
 
 <template>
-  <!-- on hover of the surrounding link/button the arrow flies out top-right and a fresh one slides in -->
   <span
     class="fx-arrow relative inline-flex size-[1em] shrink-0 overflow-hidden"
     aria-hidden="true"

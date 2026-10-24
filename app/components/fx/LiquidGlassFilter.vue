@@ -64,7 +64,6 @@ onMounted(() => {
           preserveAspectRatio="none"
           result="mapY"
         />
-        <!-- negative scale: the rim samples towards the centre, so it never reads outside the element -->
         <feDisplacementMap
           in="SourceGraphic"
           in2="mapX"

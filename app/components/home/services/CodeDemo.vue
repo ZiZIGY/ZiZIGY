@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
-/*
- * A tiny Vue component, shown as source and running next to it: press the button in the preview and
- * the `count++` line lights up while the value written after `ref(0)` follows along.
- */
 const { t } = useI18n()
 
 type Kind = 'tag' | 'attr' | 'str' | 'kw' | 'fn' | 'plain' | 'mustache'
@@ -13,7 +9,6 @@ type Token = [Kind, string]
 // a literal closing script tag would end this SFC's own <script> block, so it is put together here
 const SCRIPT_END = ['<', '/script>'].join('')
 
-// the source, token by token (rendered with v-text, so the mustaches stay text)
 const lines: Token[][] = [
   [['tag', '<script'], ['attr', ' setup lang'], ['plain', '='], ['str', '"ts"'], ['tag', '>']],
   [['kw', 'const'], ['plain', ' count = '], ['fn', 'ref'], ['plain', '(0)']],
@@ -48,7 +43,6 @@ onBeforeUnmount(() => clearTimeout(hitTimer))
 
 const root = useTemplateRef<HTMLElement>('root')
 
-// the lines type themselves in, top to bottom, the first time the editor scrolls into view
 useGsap(({ reduceMotion }) => {
   if (reduceMotion) return
   gsap.from('.code-line', {

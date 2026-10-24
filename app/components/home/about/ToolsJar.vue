@@ -3,12 +3,6 @@ import { gsap } from 'gsap'
 import Matter from 'matter-js'
 import { site } from '~/data/site'
 
-/*
- * The tools in a jar, with real physics (matter-js): the chips drop in the first time the jar comes
- * into view, pile up, can be grabbed and thrown (fine pointers), and hop when the page scrolls fast.
- * On touch a tap shakes the jar. The server renders a plain wrap of chips; the client measures them,
- * then hands them to the simulation.
- */
 const { t } = useI18n()
 
 const jar = useTemplateRef<HTMLElement>('jar')
@@ -40,7 +34,6 @@ function build() {
     Bodies.rectangle(width / 2, -height * 1.5 - wall / 2, width + wall * 2, wall, { isStatic: true }),
   ]
 
-  // every chip starts somewhere above the jar, so they rain in when the simulation starts
   bodies = sizes.map(({ w, h }, index) => Bodies.rectangle(
     gsap.utils.random(w / 2 + 4, Math.max(w / 2 + 5, width - w / 2 - 4)),
     -h - index * 22,
@@ -73,7 +66,6 @@ function sync() {
   })
 }
 
-// matter-js is stable at steps up to ~16.7ms: a long frame is split in two
 function tick(_time: number, deltaMs: number) {
   if (!engine || !visible.value) return
   const step = Math.min(deltaMs, 33)

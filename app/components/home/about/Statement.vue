@@ -2,7 +2,6 @@
 import { gsap } from 'gsap'
 import { SplitText } from 'gsap/SplitText'
 
-/** The About statement: it fills in word by word as you read it, then the marker swipes under the key phrase. */
 const { t, locale } = useI18n()
 const title = useTemplateRef<HTMLElement>('title')
 

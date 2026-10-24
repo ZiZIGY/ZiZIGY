@@ -14,11 +14,6 @@ const timecode = useTemplateRef<HTMLElement>('timecode')
 const bar = useTemplateRef<HTMLElement>('bar')
 const hint = useTemplateRef<HTMLElement>('hint')
 
-/*
- * The showreel is a strip of film running through the screen with the scroll: a countdown leader,
- * then one frame per word of the reel, each with its own little scene. The frame in the middle is in
- * focus and plays; its neighbours are dimmed. Everything is scrubbed: the scroll is the projector.
- */
 type Scene = 'leader' | 'code' | 'motion' | 'cube' | 'fps' | 'again'
 interface Frame { scene: Scene, word?: string }
 
@@ -28,10 +23,8 @@ const frames = computed<Frame[]>(() => [
   ...tList('showreel.words').map((word, index) => ({ scene: SCENES[index % SCENES.length]!, word })),
 ])
 
-// a space in a word ("60 fps") would collapse inside its own inline-block letter box
 const NBSP = ' '
 
-/** The reel's running time, spread over the whole strip. */
 const LENGTH = 35
 const pad = (value: number) => String(value).padStart(2, '0')
 const format = (seconds: number) => `${pad(Math.floor(seconds / 60))}:${pad(Math.floor(seconds % 60))}`
@@ -40,7 +33,6 @@ const format = (seconds: number) => `${pad(Math.floor(seconds / 60))}:${pad(Math
 const codeLines = [62, 38, 74, 50, 28, 66, 44]
 const fpsBars = [42, 48, 40, 52, 46, 44, 92, 46, 50, 42, 48, 45, 47, 41, 50, 44, 43, 49, 46, 42]
 
-/** The player row: frame counter, timecode, progress bar. `progress` is 0–1 through the strip. */
 function showPlayer(progress: number, count: number) {
   const active = Math.round(progress * (count - 1))
   if (counter.value) counter.value.textContent = `${pad(active + 1)} / ${pad(count)}`
@@ -55,8 +47,6 @@ useGsap(({ isDesktop, reduceMotion }) => {
   if (!el || !row || !gate) return
   const items = gsap.utils.toArray<HTMLElement>('.reel-frame', row)
 
-  // phones and reduced motion: a plain strip you swipe through, every frame fully shown; the player
-  // row follows the swipe
   if (!isDesktop || reduceMotion) {
     const onSwipe = () => {
       const room = gate.scrollWidth - gate.clientWidth
@@ -70,7 +60,6 @@ useGsap(({ isDesktop, reduceMotion }) => {
   let centers: number[] = []
   let step = 1
 
-  // the section is exactly as tall as the strip is long, so one screen of scroll moves one screen of film
   const fit = () => {
     distance = Math.max(0, row.scrollWidth - innerWidth)
     centers = items.map(item => item.offsetLeft + item.offsetWidth / 2)
@@ -87,13 +76,11 @@ useGsap(({ isDesktop, reduceMotion }) => {
     const x = -progress * distance
     row.style.transform = `translate3d(${x}px, 0, 0)`
 
-    // each frame's place relative to the gate: -1 one frame to the left, 0 centred, 1 one to the right
     const middle = innerWidth / 2
     items.forEach((item, index) => {
       const p = gsap.utils.clamp(-1.5, 1.5, ((centers[index] ?? 0) + x - middle) / step)
       item.style.setProperty('--p', p.toFixed(3))
       item.style.setProperty('--focus', Math.max(0, 1 - Math.abs(p)).toFixed(3))
-      // letters come up from below as a frame arrives and leave upwards as it goes
       item.style.setProperty('--dir', p >= 0 ? '1' : '-1')
     })
 
@@ -112,8 +99,6 @@ useGsap(({ isDesktop, reduceMotion }) => {
     onUpdate: self => render(self.progress),
   })
 
-  // while the film fills the screen (a little before it pins and after it lets go too), the floating
-  // to-top button steps aside: its corner is where the timecode sits
   ScrollTrigger.create({
     trigger: el,
     start: 'top 25%',

@@ -1,12 +1,7 @@
 <script setup lang="ts">
-/*
- * A live feed: a new reading arrives every so often and the line shifts left to make room, like a
- * WebSocket dashboard would. Readings only come in while the chart is on screen.
- */
 const { t, locale } = useI18n()
 
 const COUNT = 28
-// a fixed start, so the server and the client render the same line
 const values = ref<number[]>(Array.from({ length: COUNT }, (_, i) => 48 + Math.sin(i * 0.7) * 9 + Math.cos(i * 1.9) * 4))
 
 const points = computed(() => values.value
@@ -20,7 +15,6 @@ const root = useTemplateRef<HTMLElement>('root')
 const visible = useElementVisibility(root)
 const reducedMotion = usePreferredReducedMotion()
 
-// a gentle random walk that keeps to the middle of the chart
 const { pause, resume } = useIntervalFn(() => {
   const previous = last.value
   const next = Math.min(82, Math.max(18, previous + (Math.random() - 0.5) * 14 + (50 - previous) * 0.08))

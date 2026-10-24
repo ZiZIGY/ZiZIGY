@@ -1,22 +1,14 @@
 <script setup lang="ts">
 import { Check, RotateCcw } from '@lucide/vue'
 
-/*
- * An AI agent at work, in miniature: the request types itself in, then the agent's steps stream in
- * one by one (a spinner while a step runs, a check when it's done), and it ends waiting for review.
- * It plays the first time it comes into view; the button plays it again. The server renders the run
- * finished, and reduced motion keeps it that way.
- */
 const { t } = useI18n()
 const tList = useTList()
 
 const prompt = computed(() => t('services.demo.agent.prompt'))
 const steps = computed(() => tList('services.demo.agent.steps'))
-// the step that edits the files carries its diff
 const EDIT_STEP = 2
 const DIFF = { added: 42, removed: 7 }
 
-// how much of the prompt is typed, and the step running now (steps.length = all done)
 const typed = ref(Number.POSITIVE_INFINITY)
 const current = ref(Number.POSITIVE_INFINITY)
 const running = ref(false)
@@ -26,7 +18,6 @@ const root = useTemplateRef<HTMLElement>('root')
 const visible = useElementVisibility(root)
 const reducedMotion = usePreferredReducedMotion()
 
-// a newer run (or leaving the page) makes an older one stop where it is
 let run = 0
 const wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -48,12 +39,12 @@ async function play() {
   running.value = false
 }
 
-// it starts empty on the client and plays when first seen
 onMounted(() => {
   if (reducedMotion.value === 'reduce') return
   typed.value = 0
   current.value = -1
 })
+
 const stop = watch(visible, (seen) => {
   if (!seen || reducedMotion.value === 'reduce') return
   stop()
@@ -146,7 +137,6 @@ const state = (index: number) => (index < current.value ? 'is-done' : index === 
   line-height: 1.4;
 }
 
-// room for two lines from the start, so the window doesn't grow when the typed request wraps
 .agent-prompt {
   display: flex;
   gap: 0.5rem;
@@ -175,7 +165,6 @@ const state = (index: number) => (index < current.value ? 'is-done' : index === 
   gap: 0.45rem;
 }
 
-// a step that hasn't started is there but invisible, so the window never changes height
 .agent-step {
   display: flex;
   align-items: center;

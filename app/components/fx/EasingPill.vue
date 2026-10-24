@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
-// Same command structure (M + two C) so GSAP can morph between them point by point.
 const curves = [
   'M8 38 C40 38 44 10 60 10 C76 10 80 38 112 38', // bell
   'M8 38 C52 38 54 38 60 24 C66 10 68 10 112 10', // ease-in-out

@@ -9,10 +9,8 @@ const { scrollToSection } = useSectionNav()
 
 const root = useTemplateRef<HTMLElement>('root')
 
-// the drop sits to the right of the headline; phones have no room beside it, so they go without
 const blob = { x: 0.79, y: 0.4, size: 0.165 }
 
-// the intro plays once; a locale switch re-splits the new copy and lays it out in its final state
 let introPlayed = false
 
 useGsap(({ reduceMotion, isDesktop: desktop }, context) => {
@@ -24,7 +22,6 @@ useGsap(({ reduceMotion, isDesktop: desktop }, context) => {
       .flatMap(seg => SplitText.create(seg, { type: 'words,chars', mask: 'words', wordsClass: 'split-word', aria: 'none' }).chars)
     const lead = SplitText.create('.hero-lead', { type: 'lines', mask: 'lines', linesClass: 'split-line' })
 
-    // nothing that holds liquid glass fades: opacity < 1 would cut the glass off from what's behind it
     const intro = gsap.timeline({ paused: true, defaults: { ease: 'expo.out' } })
       .from('.hero-blob', { scale: 0.6, transformOrigin: `${blob.x * 100}% ${blob.y * 100}%`, duration: 2.2, ease: 'elastic.out(1, 0.55)' }, 0)
       .from('.hero-chip', { scale: 0.4, y: 20, duration: 1.1, ease: 'back.out(1.8)' }, 0.1)
@@ -44,7 +41,6 @@ useGsap(({ reduceMotion, isDesktop: desktop }, context) => {
     }
 
     if (desktop) {
-      // on the way out the lines drift apart, the copy lifts away and the drop floats up after it
       gsap.timeline({ scrollTrigger: { trigger: el, start: 'top top', end: 'bottom top', scrub: true } })
         .to('.hero-line-1', { xPercent: -6, ease: 'none' }, 0)
         .to('.hero-line-2', { xPercent: 3, ease: 'none' }, 0)
@@ -58,7 +54,7 @@ useGsap(({ reduceMotion, isDesktop: desktop }, context) => {
     build()
     return
   }
-  // wait for the preloader: fonts are final by then, so the lines split where they will stay
+
   const stop = watch(() => ui.isReady, (ready) => {
     if (!ready) return
     stop()
@@ -69,11 +65,6 @@ useGsap(({ reduceMotion, isDesktop: desktop }, context) => {
 </script>
 
 <template>
-  <!--
-    Full width, on the paper. The star is a drop of ferrofluid rendered in GLSL (FxFerrofluid): the
-    pointer is its magnet — spikes rise towards it, a click knocks them flat. Signal is only the
-    accent — the italic word, the live dot, the curve, and the warm reflection on the drop.
-  -->
   <section
     ref="root"
     v-pause-offscreen
@@ -84,7 +75,6 @@ useGsap(({ reduceMotion, isDesktop: desktop }, context) => {
       aria-hidden="true"
     >
       <div class="hero-dots absolute inset-0" />
-      <!-- hidden (display: none) below lg: never on screen there, so it never renders a frame -->
       <FxFerrofluid
         class="hero-blob absolute inset-0 hidden lg:block"
         :x="blob.x"
@@ -93,7 +83,6 @@ useGsap(({ reduceMotion, isDesktop: desktop }, context) => {
       />
     </div>
 
-    <!-- the whole first screen on desktop: the drop needs the room, and the film starts on the next one -->
     <div class="hero-copy container-site relative pt-[calc(var(--header-h)+clamp(2rem,6vh,4.5rem))] pb-14 lg:pb-[clamp(3rem,8vh,6rem)]">
       <div class="flex flex-wrap items-center gap-x-5 gap-y-3">
         <span class="hero-chip liquid-glass glass-on-light inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[0.8125rem] font-semibold">
@@ -106,7 +95,6 @@ useGsap(({ reduceMotion, isDesktop: desktop }, context) => {
         </span>
       </div>
 
-      <!-- narrower than the page on desktop (four lines): the drop lives in the space to the right of them -->
       <h1
         class="type-hero mt-[clamp(1.75rem,5vh,3.5rem)] lg:max-w-[66%] lg:text-[clamp(2.25rem,4.7vw,5.5rem)]"
         :aria-label="t('hero.title')"

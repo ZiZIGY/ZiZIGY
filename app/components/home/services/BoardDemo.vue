@@ -1,8 +1,4 @@
 <script setup lang="ts">
-/*
- * A small kanban board that really works: pick a card up, carry it across, drop it into another
- * column — it glides into the free slot and the counts update; cards in the last column tick off.
- */
 const { t } = useI18n()
 const tList = useTList()
 const columns = computed(() => tList('services.demo.columns'))
@@ -113,7 +109,6 @@ function drop() {
   gap: 0.9rem;
 }
 
-// three columns; the cards are laid out on top of them by column and row
 .board {
   --head: 2.4rem;
   --card-h: 2.9rem;

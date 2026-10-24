@@ -54,9 +54,6 @@ useGsap(({ reduceMotion }) => {
         />
       </div>
 
-      <!-- the bento: three service tiles you can play with, two small ones on how the work is done.
-           Row one: frontend (7) + motion (5); row two: complex (5) + AI (3) + real-time (4) -->
-
       <div class="mt-[clamp(3rem,6vw,5.5rem)] grid gap-3 lg:grid-cols-12 lg:gap-4">
         <article
           v-for="(id, index) in services"

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
-// foreground, not ink: in the dark theme that dot turns paper instead of vanishing into the pill
 const colors = ['var(--color-signal)', 'var(--foreground)', 'var(--color-graphite)']
 
 const root = useTemplateRef<HTMLElement>('root')
@@ -14,8 +13,6 @@ useGsap(({ reduceMotion }, context) => {
   // slots[i] = position of dot i
   const slots = dots.map((_, index) => index)
 
-  // two neighbours trade places like a juggler's shuffle: one hops over, the other ducks under
-  // context.add('name', fn) returns a function that runs inside the context, so tweens made later still revert
   const swap = context.add('swap', () => {
     const left = Math.random() < 0.5 ? 0 : 1
     const a = slots.indexOf(left)
@@ -30,10 +27,8 @@ useGsap(({ reduceMotion }, context) => {
   }) as () => void
 
   const loop = gsap.timeline({ repeat: -1 }).call(swap, [], 1.8)
-  // shuffles only while visible
   whileOnScreen(el, onScreen => loop.paused(!onScreen))
 
-  // hover: the three hop in a wave
   const hop = context.add('hop', () => {
     gsap.to(dots, { keyframes: { yPercent: [0, -60, 0] }, duration: 0.5, stagger: 0.07, ease: 'power2.out', overwrite: 'auto' })
   }) as () => void
@@ -73,8 +68,6 @@ useGsap(({ reduceMotion }, context) => {
   --gap: 0.12em;
   position: absolute;
   top: calc((0.86em - var(--size)) / 2);
-  /* the slot drives `left`, not `translate`: GSAP owns this element's transform for the hops
-     and resets the individual translate property when it takes over */
   left: calc(0.15em + var(--slot) * (var(--size) + var(--gap)));
   width: var(--size);
   height: var(--size);

@@ -4,12 +4,6 @@ import { gsap } from 'gsap'
 import { education } from '~/data/experience'
 import { site } from '~/data/site'
 
-/*
- * The last word. Beside the headline, the ways to reach me and the few facts left over (the articles,
- * the résumé, the education). Across the card below, a message that writes itself: pick what you need
- * and when, the sentence follows (the words that changed swap in), and it opens in Telegram or the
- * mail app already typed.
- */
 const { t } = useI18n()
 const { copy, copied } = useClipboard({ source: site.email, copiedDuring: 2000 })
 
@@ -29,7 +23,6 @@ const mailHref = computed(() => {
   return `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message.value)}`
 })
 
-// the address wraps after the "@" if it has to, never in the middle of a word
 const [emailName, emailHost] = site.email.split('@')
 
 const links = computed(() => [
@@ -48,13 +41,12 @@ useGsap(({ reduceMotion }) => {
   const el = card.value
   if (!el || reduceMotion) return
 
-  // the card rises into place as it arrives: it only moves, nothing zooms
   gsap.fromTo(el, { y: 90 }, {
     y: 0,
     ease: 'none',
     scrollTrigger: { trigger: el, start: 'top bottom', end: 'top 35%', scrub: true },
   })
-  // the rows and the choices come in one after another, once
+
   gsap.from('.reach-row, .chip', {
     y: 24,
     opacity: 0,
@@ -78,8 +70,6 @@ useGsap(({ reduceMotion }) => {
         ref="card"
         class="contact-card grain relative overflow-hidden rounded-[2.5rem] bg-ink px-[clamp(1.25rem,5vw,6rem)] py-[clamp(2.5rem,7vw,7rem)] text-paper dark:ring-1 dark:ring-white/10 dark:ring-inset"
       >
-        <!-- top: the headline beside the ways to reach me; below, the message across the card.
-             On phones the message comes right after the headline, the contacts last -->
         <div class="contact-grid grid gap-x-(--col-gap) gap-y-12 lg:grid-cols-12 lg:gap-y-[clamp(3.5rem,6vw,5rem)]">
           <h2 class="type-h2 max-w-[12ch] lg:col-span-7 lg:col-start-1 lg:row-start-1">
             <FxReveal
@@ -104,7 +94,6 @@ useGsap(({ reduceMotion }) => {
             />
           </h2>
 
-          <!-- the message: the choices on the left, the sentence they make on the right -->
           <div class="builder lg:col-span-12 lg:row-start-2">
             <div class="builder-choices">
               <div class="builder-group">
@@ -275,9 +264,6 @@ useGsap(({ reduceMotion }) => {
 </template>
 
 <style scoped lang="scss">
-// ——— the message ———
-
-// one panel: the choices, and the sentence they make beside them (under them on phones)
 .builder {
   display: grid;
   gap: 2rem;
@@ -311,7 +297,6 @@ useGsap(({ reduceMotion }) => {
   margin-top: 0.85rem;
 }
 
-// the chosen one turns paper: signal is kept for the button that sends
 .chip {
   min-height: 2.75rem;
   padding-inline: 1.15rem;
@@ -344,7 +329,6 @@ useGsap(({ reduceMotion }) => {
   background: rgb(255 255 255 / 0.05);
 }
 
-// the sentence, with a caret at its end as if it were still being typed
 .builder-message {
   margin-top: 0.75rem;
   font-family: var(--font-display);
@@ -365,8 +349,6 @@ useGsap(({ reduceMotion }) => {
   }
 }
 
-// the words that come from the choices, underlined in signal; they fade over when a choice changes.
-// Plain inline text, so they wrap like the rest and the punctuation after them never hangs alone
 .builder-word {
   background: none;
   color: var(--color-paper);
@@ -391,8 +373,6 @@ useGsap(({ reduceMotion }) => {
     opacity: 0;
   }
 }
-
-// ——— the ways to reach me ———
 
 .contact-email {
   font-family: var(--font-display);
@@ -426,7 +406,6 @@ useGsap(({ reduceMotion }) => {
   }
 }
 
-// a row: what it is, the detail, and an arrow if it leads somewhere; hairlines between, rounded at the ends
 .reach-row {
   position: relative;
   display: grid;

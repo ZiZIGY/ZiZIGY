@@ -1,16 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
-/*
- * A drop of ferrofluid, ray-marched in a fragment shader (plain WebGL, no 3D library). The pointer is
- * the magnet: Rosensweig spikes rise all over the drop, tallest where they face the cursor, and the
- * body leans out towards it. With no pointer about, the field breathes slowly, so the spikes rise and
- * settle on their own; a click knocks them flat for a moment. Mirror-black, lit by a studio softbox
- * and a signal-orange kicker — the accent colour as a reflection, not as paint.
- *
- * Cheap where it can be: a bounding-sphere test sends most pixels home before any marching, the buffer
- * is drawn at ≤ 1.5× device pixels (lower if frames run long), and nothing renders off screen.
- */
 const props = withDefaults(defineProps<{
   /** Centre of the drop inside the canvas, as fractions of its width and height. */
   x?: number
@@ -156,10 +146,9 @@ void main() {
 }
 `
 
-// springs, so the field and the magnet overshoot a little and settle like a liquid would
 interface Spring { value: number, velocity: number, target: number }
+
 const spring = (value = 0): Spring => ({ value, velocity: 0, target: value })
-// at rest the magnet hangs above and in front of the drop, so the idle spikes point up and out
 const REST = { x: 0.5, y: 1.1 }
 const magnetX = spring(REST.x)
 const magnetY = spring(REST.y)
@@ -171,7 +160,6 @@ function step(s: Spring, dt: number, stiffness: number, damping: number) {
   s.value += s.velocity * dt
 }
 
-/** 0 with the pointer far away (or gone), 1 right at the drop. */
 let near = 0
 let gl: WebGLRenderingContext | null = null
 let uniforms: Record<string, WebGLUniformLocation | null> = {}

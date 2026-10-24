@@ -2,16 +2,10 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-/*
- * About as a magazine spread: the portrait stays on the left for the whole read while the story runs
- * on the right, the statement and then three principles. Each principle turns the portrait into a
- * picture of itself (the chapters of HomeAboutPortrait), locked to the scroll. Then the tools jar.
- */
 const { t, locale } = useI18n()
 
 const root = useTemplateRef<HTMLElement>('root')
 const portrait = useTemplateRef<{ setProgress: (value: number) => void, $el: HTMLElement }>('portrait')
-// the principle being read, 1…3 (0 while the statement is): for the caption and the highlight
 const chapter = ref(0)
 
 useSectionSpy(root, 'about')
@@ -25,9 +19,6 @@ useGsap(({ isDesktop, reduceMotion }) => {
   const el = root.value
   if (!el) return
 
-  // the reading position, 0…3. On desktop the principles move it, each one while it rises through
-  // the screen; on phones the portrait isn't sticky, so its own pass through the screen does.
-  // Reduced motion gets the chapters without the transitions between them.
   const show = (value: number) => {
     portrait.value?.setProgress(value)
     // chapter n plays while the reading position goes from n - 1 to n, so its caption shows from the start
@@ -103,7 +94,6 @@ useGsap(({ isDesktop, reduceMotion }) => {
 </template>
 
 <style scoped lang="scss">
-// on desktop each principle gets a screen's worth of reading; the one being read is in focus
 .principle {
   display: grid;
   grid-template-columns: 4.5rem 1fr;

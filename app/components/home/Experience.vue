@@ -12,16 +12,12 @@ const list = useTemplateRef<HTMLElement>('list')
 
 useSectionSpy(root, 'experience')
 
-/** The job being read: the row crossing the middle of the screen. */
 const active = ref(0)
 const current = computed(() => experience[active.value]!)
 
 const startYear = (item: Experience) => Number(item.from.slice(0, 4))
 const endYear = (item: Experience) => (item.to ? item.to.slice(0, 4) : t('experience.now'))
 
-// An editorial timeline instead of a pinned sideways track: plain document flow, nothing pinned, nothing
-// moved per frame but a 1px rail. The row in the middle of the screen comes into focus and the big sticky
-// year rolls to it (FxOdometer); the rail fills and each row's rule draws in with the scroll.
 useGsap(({ reduceMotion }) => {
   const el = list.value
   if (!el) return

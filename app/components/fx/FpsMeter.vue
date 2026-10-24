@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
-// Live frame rate from GSAP's ticker, refreshed twice a second — the site's own performance, on display.
 const out = useTemplateRef<HTMLElement>('out')
 
 let frames = 0
