@@ -69,7 +69,7 @@
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ZiZIGY&theme=github_dark" alt="Repos per language" width="49%">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ZiZIGY&theme=github_dark" alt="Most commit language" width="49%">
   <br><br>
-  <img src="https://komarev.com/ghpvc/?username=ZiZIGY&color=orange&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=ZiZIGY.ZiZIGY&left_text=Profile%20views&left_color=%23111113&right_color=%23FF4F1A" alt="Profile views">
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:111113,100:FF4F1A&height=110&section=footer" alt="" width="100%">
