@@ -1,0 +1,386 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./view-transitions.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Brand, "signal orange": warm paper, near-black ink and one loud international orange.
+ * Signal is an accent only — actions, highlights, small marks, a soft light — never a whole plane:
+ * the planes are paper, white cards, ink, stone and sand. Unbounded for display type.
+ */
+@theme {
+  --font-sans: "Onest", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Unbounded", "Onest", ui-sans-serif, sans-serif;
+
+  --color-signal: #ff4f1a;
+  --color-signal-soft: #ff7344;
+  --color-ink: #111113;
+  --color-coal: #1c1c1f;
+  --color-paper: #f2f1ed;
+  --color-stone: #d9d7d0;
+  --color-sand: #e8e1d4;
+  --color-graphite: #8a877f;
+
+  --radius-chip: 0.75rem;
+  --radius-tile: 1.25rem;
+  --radius-card: 1.75rem;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* shadcn-vue semantic tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-stripe: var(--stripe);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  color-scheme: light;
+  --gutter: clamp(1rem, 3vw, 3rem);
+  --col-gap: clamp(1.25rem, 2.5vw, 2.5rem);
+  --header-h: 5rem;
+  --radius: 0.75rem;
+
+
+  --background: #f2f1ed;
+  --foreground: #111113;
+  --card: #ffffff;
+  --card-foreground: #111113;
+  --popover: #ffffff;
+  --popover-foreground: #111113;
+  --primary: #111113;
+  --primary-foreground: #f2f1ed;
+  --secondary: #e6e4de;
+  --secondary-foreground: #111113;
+  --muted: #e6e4de;
+  /* darker than graphite: small grey text on paper still reads at 6:1 */
+  --muted-foreground: #5c5952;
+  --accent: #ff4f1a;
+  --accent-foreground: #111113;
+  --destructive: #e5484d;
+  --border: rgb(17 17 19 / 0.12);
+  --input: rgb(17 17 19 / 0.16);
+  --ring: #ff4f1a;
+  --stripe: #e4e2dc;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --background: #0e0e0f;
+  --foreground: #f2f1ed;
+  --card: #18181a;
+  --card-foreground: #f2f1ed;
+  --popover: #18181a;
+  --popover-foreground: #f2f1ed;
+  --primary: #f2f1ed;
+  --primary-foreground: #111113;
+  --secondary: #202023;
+  --secondary-foreground: #f2f1ed;
+  --muted: #202023;
+  --muted-foreground: #a3a098;
+  --border: rgb(242 241 237 / 0.1);
+  --input: rgb(242 241 237 / 0.14);
+  --ring: #ff4f1a;
+  --stripe: #18181a;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background-color: var(--color-signal);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+}
+
+@utility container-site {
+  width: 100%;
+  max-width: 112rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Type scale from the design system, made fluid so wide screens get the poster look */
+@utility type-hero {
+  font-family: var(--font-display);
+  font-weight: 600;
+  /* Unbounded is wide: the longest line ("которые хочется листать") must fit the container in one go */
+  font-size: clamp(2.25rem, 5.6vw, 6.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+
+@utility type-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.5rem, 7.4vw, 9.5rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+@utility type-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.25rem, 5.4vw, 6.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+@utility type-h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1.7vw, 1.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+@utility type-lead {
+  font-size: clamp(1.0625rem, 1.25vw, 1.25rem);
+  line-height: 1.6;
+}
+
+@utility type-overline {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/*
+ * Film grain over a colour plane; sits above the background, below the content.
+ * Plain alpha, no blend mode: a blended full-section layer costs an extra compositing pass every frame.
+ */
+@utility grain {
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.07;
+  }
+}
+
+/*
+ * Liquid glass, in three costs — pick the cheapest that still looks right:
+ *   liquid-glass                frosted: backdrop blur + rim light. GPU blur, fine for most pieces.
+ *   liquid-glass glass-refract  + the SVG rim refraction from <FxLiquidGlassFilter> (Chromium only).
+ *                               Re-filtered on every frame the backdrop changes: small and mostly still pieces only.
+ *   liquid-glass glass-flat     no backdrop filter at all — tint, gloss and rim only. For large or moving
+ *                               surfaces over soft colour: blurring a smooth gradient changes almost nothing anyway.
+ * Tone with .glass-on-dark / .glass-on-light, or set --glass-tint / --glass-rim / --glass-shade directly.
+ */
+@utility liquid-glass {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    border-radius: inherit;
+    pointer-events: none;
+    -webkit-backdrop-filter: blur(var(--glass-blur, 10px)) saturate(1.6);
+    backdrop-filter: blur(var(--glass-blur, 10px)) saturate(1.6);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    background: var(--glass-tint, rgb(255 255 255 / 0.12));
+    box-shadow:
+      inset 1px 1px 0 var(--glass-rim, rgb(255 255 255 / 0.55)),
+      inset -1px -1px 0 color-mix(in srgb, var(--glass-rim, rgb(255 255 255 / 0.55)) 45%, transparent),
+      inset 0 0 0 0.5px var(--glass-shade, transparent),
+      inset 0 0 1.5rem rgb(255 255 255 / 0.08),
+      0 0.75rem 1.75rem -1rem rgb(14 14 18 / 0.35);
+  }
+}
+
+.has-liquid-glass .liquid-glass.glass-refract::before {
+  /* a light blur keeps the refraction readable: the lens bends the scene, it doesn't erase it */
+  -webkit-backdrop-filter: blur(var(--glass-lens-blur, 2.5px)) url(#liquid-glass) saturate(1.7) brightness(1.05);
+  backdrop-filter: blur(var(--glass-lens-blur, 2.5px)) url(#liquid-glass) saturate(1.7) brightness(1.05);
+}
+
+/* a magnifier instead of a rim lens (the cursor's lens state) */
+.has-liquid-glass .liquid-glass.glass-lens::before {
+  -webkit-backdrop-filter: blur(0.5px) url(#liquid-lens) saturate(1.4) brightness(1.06);
+  backdrop-filter: blur(0.5px) url(#liquid-lens) saturate(1.4) brightness(1.06);
+}
+
+.liquid-glass.glass-flat::before {
+  display: none;
+}
+
+/* in the components layer, so utilities like hover:[--glass-tint:…] can still override them */
+@layer components {
+  /* small chips: translucent without a backdrop filter — dozens of live filters would cost frames */
+  .glass-chip {
+    border: 1px solid rgb(255 255 255 / 0.16);
+    background: rgb(255 255 255 / 0.08);
+    box-shadow: inset 1px 1px 0 rgb(255 255 255 / 0.12);
+  }
+
+  .glass-on-dark {
+    --glass-tint: rgb(255 255 255 / 0.1);
+    --glass-rim: rgb(255 255 255 / 0.55);
+  }
+
+  .glass-on-light {
+    --glass-tint: rgb(255 255 255 / 0.5);
+    --glass-rim: rgb(255 255 255 / 0.95);
+    --glass-shade: rgb(14 14 18 / 0.1);
+  }
+
+  .dark .glass-on-light {
+    --glass-tint: rgb(255 255 255 / 0.06);
+    --glass-rim: rgb(255 255 255 / 0.3);
+    --glass-shade: rgb(255 255 255 / 0.06);
+  }
+
+  /* smoked glass that reads the same over paper, signal and ink: the header lives on it, so it never switches tone */
+  .glass-ink,
+  .dark .glass-ink {
+    --glass-tint: rgb(17 17 19 / 0.72);
+    --glass-rim: rgb(255 255 255 / 0.22);
+    --glass-shade: rgb(255 255 255 / 0.06);
+    color: var(--color-paper);
+  }
+
+  /* after the tones on purpose: a soft highlight across the top-left, so free-floating glass reads as a thick, curved piece */
+  .liquid-glass.glass-gloss {
+    --glass-tint: radial-gradient(120% 90% at 28% 18%, rgb(255 255 255 / 0.34), rgb(255 255 255 / 0.06) 55%, rgb(255 255 255 / 0.02));
+  }
+}
+
+/*
+ * Decorative layers and animated scenes: the browser skips layout and paint for them while they are
+ * off screen (their CSS loops are paused separately, by v-pause-offscreen). Only for absolutely
+ * positioned boxes with a definite size (and nothing poking out of them): skipped content is size- and
+ * paint-contained.
+ */
+@utility skip-offscreen {
+  content-visibility: auto;
+}
+
+/* a live-status dot; the ping is a scaled copy (transform + opacity), not an animated box-shadow */
+@layer components {
+  /* signal by default; on a signal plane pass another colour through --ping */
+  .ping-dot {
+    position: relative;
+    width: 0.5rem;
+    height: 0.5rem;
+    flex: none;
+    border-radius: 50%;
+    background: var(--ping, var(--color-signal));
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: inherit;
+      animation: ping-out 2s var(--ease-out-expo) infinite;
+    }
+  }
+}
+
+@keyframes ping-out {
+  from {
+    opacity: 0.7;
+    scale: 1;
+  }
+
+  to {
+    opacity: 0;
+    scale: 2.8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ping-dot::after {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/*
+ * Paused off screen (the pause-offscreen plugin sets the attribute): a running CSS animation costs a
+ * style recalc every frame even where nobody can see it. Also used for project cards buried in the stack.
+ */
+:is([data-offscreen], [data-covered]) *,
+:is([data-offscreen], [data-covered]) *::before,
+:is([data-offscreen], [data-covered]) *::after {
+  animation-play-state: paused !important;
+}
+
+/* the custom cursor (<AppCursor>) replaces the system one everywhere while it is on screen */
+html.has-cursor,
+html.has-cursor * {
+  cursor: none !important;
+}
+
+/*
+ * SplitText masks clip at the line box, which cuts descenders and diacritics (у, р, й, ё)
+ * at tight display line-heights, and at the word's advance, which negative letter-spacing makes
+ * narrower than its ink, so the last letter lost its right edge (могу, Делаю). The padding gives
+ * them room on every side without shifting the layout.
+ */
+.split-word-mask,
+.split-line-mask {
+  padding: 0.14em 0.1em;
+  margin: -0.14em -0.1em;
+}

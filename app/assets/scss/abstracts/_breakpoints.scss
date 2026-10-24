@@ -1,0 +1,32 @@
+@use 'sass:map';
+
+// Mirrors Tailwind v4 defaults so SCSS and utility classes switch at the same widths.
+// Keep in sync with any `--breakpoint-*` overrides in main.css.
+$breakpoints: (
+  'sm': 40rem,
+  'md': 48rem,
+  'lg': 64rem,
+  'xl': 80rem,
+  '2xl': 96rem,
+);
+
+@function breakpoint($name) {
+  @if not map.has-key($breakpoints, $name) {
+    @error 'Unknown breakpoint `#{$name}`. Expected one of: #{map.keys($breakpoints)}';
+  }
+  @return map.get($breakpoints, $name);
+}
+
+// Same semantics as Tailwind's `md:` — from this width and up.
+@mixin up($name) {
+  @media (width >= #{breakpoint($name)}) {
+    @content;
+  }
+}
+
+// Same semantics as Tailwind's `max-md:` — below this width.
+@mixin down($name) {
+  @media (width < #{breakpoint($name)}) {
+    @content;
+  }
+}

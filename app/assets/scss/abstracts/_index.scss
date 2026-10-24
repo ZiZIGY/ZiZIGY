@@ -1,0 +1,5 @@
+// Injected into every SCSS file via `vite.css.preprocessorOptions.scss.additionalData`.
+// Only put things here that emit no CSS on their own (variables, mixins, functions).
+@forward 'breakpoints';
+@forward 'mixins';
+@forward 'functions';

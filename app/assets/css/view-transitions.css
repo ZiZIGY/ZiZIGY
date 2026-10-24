@@ -1,0 +1,58 @@
+/*
+ * View Transitions API.
+ * Route changes use the browser's default root cross-fade (experimental.viewTransition in nuxt.config).
+ * Manual transitions go through useViewTransition() and are tagged with a type, so each one is styled here
+ * with :active-view-transition-type() without affecting the others.
+ */
+
+/*
+ * Theme and locale swap the whole page at once, so it must be one snapshot. Anything with its own
+ * view-transition-name (a case page's title and stage, a card that morphed) would otherwise be captured
+ * apart and cross-fade to the new colours straight away — ahead of the circle, the letters already flipped.
+ * !important beats the names set as inline styles.
+ */
+html:active-view-transition-type(theme, locale) * {
+  view-transition-name: none !important;
+}
+
+/* Theme: the new snapshot is revealed by a growing circle animated from useTheme(), so the default fade is off. */
+html:active-view-transition-type(theme) {
+  &::view-transition-old(root),
+  &::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+}
+
+/* Locale: soft blur cross-fade while the copy swaps. */
+html:active-view-transition-type(locale) {
+  &::view-transition-old(root) {
+    animation: vt-blur-out 0.35s ease both;
+  }
+
+  &::view-transition-new(root) {
+    animation: vt-blur-in 0.35s ease both;
+  }
+}
+
+@keyframes vt-blur-out {
+  to {
+    opacity: 0;
+    filter: blur(8px);
+  }
+}
+
+@keyframes vt-blur-in {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

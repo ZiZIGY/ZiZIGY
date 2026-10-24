@@ -1,0 +1,14 @@
+@use 'sass:math';
+
+@function rem($px) {
+  @return math.div($px, 16px) * 1rem;
+}
+
+// Grows linearly from $min at the $from viewport width to $max at $to, clamped on both ends.
+// Example: font-size: fluid(32px, 120px);
+@function fluid($min, $max, $from: 375px, $to: 1920px) {
+  $slope: math.div($max - $min, $to - $from);
+  $intercept: $min - $slope * $from;
+
+  @return clamp(#{rem($min)}, #{rem($intercept)} + #{$slope * 100}vw, #{rem($max)});
+}

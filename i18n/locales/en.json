@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "title": "Alexandr Zhukov — Frontend developer",
+    "description": "Frontend developer: Vue 3, Nuxt, TypeScript. Seven years in production, author of vue-dnd-kit. Websites and interfaces you’ll want to scroll again and again."
+  },
+  "site": {
+    "name": "Alexandr Zhukov",
+    "city": "Vladimir"
+  },
+  "nav": {
+    "projects": "Projects",
+    "services": "Services",
+    "about": "About",
+    "experience": "Experience",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "cta": {
+    "discuss": "Discuss a project"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "locale": {
+    "switch": "Switch language"
+  },
+  "preloader": {
+    "label": "Loading"
+  },
+  "cursor": {
+    "view": "View",
+    "drag": "Drag",
+    "play": "Play",
+    "copy": "Copy",
+    "next": "Next",
+    "run": "Run"
+  },
+  "hero": {
+    "status": "Open to new projects",
+    "role": "Alexandr Zhukov — middle frontend · Vue, Nuxt, TypeScript",
+    "title": "I make websites you’ll want to scroll again and again.",
+    "line1": "I make websites",
+    "line2": "you’ll want to scroll",
+    "line3": "again and",
+    "accent": "again.",
+    "lead": "Seven years of building complex interfaces: e-commerce with a 3D configurator, visual editors, real-time dashboards. Vue 3 and Nuxt are my main stack, GSAP and Three.js are for the motion.",
+    "projects": "View projects",
+    "resume": "Résumé PDF"
+  },
+  "showreel": {
+    "label": "Showreel 2026",
+    "tag": "[made in code]",
+    "title": "Code + motion",
+    "fps": "frames per second, live",
+    "words": [
+      "Code",
+      "Motion",
+      "3D",
+      "60 fps",
+      "Again"
+    ],
+    "hint": "Scroll — the film will roll",
+    "frame": "Frame",
+    "end": "The end"
+  },
+  "projects": {
+    "title": "Selected work",
+    "more": "Everything on GitHub",
+    "view": "View case",
+    "items": {
+      "vue-dnd-kit": {
+        "title": "Vue DnD Kit",
+        "type": "Open source · Vue 3",
+        "status": "Open source",
+        "summary": "Headless drag-and-drop for Vue 3 and TypeScript: attaches to any element through a template ref, with no markup forced on you.",
+        "role": "Author",
+        "stack": "Vue 3 · TypeScript",
+        "facts": [
+          "255★ on GitHub",
+          "7,000+ npm downloads a month",
+          "15+ components in production"
+        ],
+        "challenge": "Drag and drop in real products is more than moving a card: nested zones, trees and kanban boards, multi-drag, auto-scroll, keyboard access and syncing with the backend.",
+        "solution": "A composable API — makeDraggable and makeDroppable — adds dragging to any element through a template ref. Async drops (onDrop returns a Promise), keyboard navigation, and a zero-dependency monorepo (core + utilities) with full typing and tree-shaking. Docs with interactive examples live on GitHub Pages."
+      },
+      "wispbringer": {
+        "title": "Wispbringer",
+        "type": "2D game · Three.js, GLSL",
+        "status": "Playable demo",
+        "summary": "A survivors-like on my own engine: rendered with Three.js, every visual effect is a custom GLSL shader.",
+        "role": "Author",
+        "stack": "Three.js · GLSL",
+        "facts": [
+          "Custom GLSL shaders",
+          "Steam release in the works"
+        ],
+        "challenge": "A game on a home-made engine instead of an off-the-shelf framework: rendering, effects and the asset pipeline are all my own.",
+        "solution": "Rendering on Three.js, every effect a custom GLSL shader. Assets are cut automatically with SpriteCutter. The demo is playable; a desktop port and a Steam release are in progress."
+      },
+      "spritecutter": {
+        "title": "SpriteCutter",
+        "type": "Tool · Sprite sheets",
+        "status": "Live demo",
+        "summary": "Cuts sprite sheets automatically — including AI-generated ones, where standard algorithms get it wrong.",
+        "role": "Author",
+        "stack": "Web app",
+        "facts": [
+          "~5 min → ~1 min per sheet",
+          "Auto-detection on AI sheets"
+        ],
+        "challenge": "On AI-generated sheets sprites sit off-centre and packed tight, so standard algorithms cut them wrong — and doing one sheet by hand in Photoshop takes about five minutes.",
+        "solution": "A custom detection algorithm copes with the offsets and the tight packing. Odd sheets get a manual mode, plus animation export and batch renaming by template with similarity matching. One sheet now takes about a minute."
+      },
+      "engine": {
+        "title": "Game engine",
+        "type": "Desktop editor · Electron, Nuxt",
+        "status": "In development",
+        "summary": "An editor that builds browser games for web and desktop — with a built-in AI agent that knows the engine’s API.",
+        "role": "Author",
+        "stack": "Electron · Nuxt · Vue 3 · shadcn-vue · Pinia",
+        "facts": [
+          "AI agent that knows the API",
+          "Builds for web and desktop"
+        ],
+        "challenge": "A comfortable editor where a browser game comes together for both web and desktop — and an assistant that helps put it together.",
+        "solution": "A desktop app on Electron + Nuxt + Vue 3, UI on shadcn-vue, state in Pinia and VueUse. The built-in AI agent knows the engine’s API and helps assemble the game right inside the editor. The project is closed, so no links yet."
+      }
+    }
+  },
+  "services": {
+    "title": "How I can help",
+    "intro": "I take the frontend end to end: architecture, interface, animation and load speed — all in one pair of hands, nothing lost in hand-offs.",
+    "items": {
+      "frontend": {
+        "title": "Frontend on Vue & Nuxt",
+        "text": "SPAs and SSR on Vue 3 and Nuxt — or React and Next.js when the project calls for it. Feature-Sliced architecture, typed contracts, fast Core Web Vitals.",
+        "tags": [
+          "Vue 3 · Nuxt",
+          "React · Next.js",
+          "FSD",
+          "Core Web Vitals"
+        ]
+      },
+      "motion": {
+        "title": "Animation & 3D",
+        "text": "Scroll scenes and transitions with GSAP, 3D scenes and configurators with Three.js and TresJS, effects in custom GLSL shaders.",
+        "tags": [
+          "GSAP",
+          "Three.js · TresJS",
+          "GLSL"
+        ]
+      },
+      "complex": {
+        "title": "Complex interfaces",
+        "text": "Visual editors and CMSs, drag and drop, real-time WebSocket dashboards, customer accounts, CRMs and SSO.",
+        "tags": [
+          "Drag & drop",
+          "WebSocket",
+          "CRM · SSO"
+        ]
+      }
+    },
+    "overline": "Services",
+    "demo": {
+      "press": "Press",
+      "preview": "Preview",
+      "curve": "Drag the handles — the ball rides this curve",
+      "board": "Drag a card to another column",
+      "columns": [
+        "Backlog",
+        "In progress",
+        "Done"
+      ],
+      "live": "live",
+      "agent": {
+        "prompt": "add sorting to the orders table",
+        "steps": [
+          "reading OrdersTable.vue",
+          "the Figma mockup via MCP",
+          "editing 3 files",
+          "tests: 24 of 24"
+        ],
+        "done": "done — ready for review",
+        "replay": "Again"
+      }
+    },
+    "extras": {
+      "ai": {
+        "title": "AI in the workflow",
+        "text": "Cursor, Claude Code, my own MCP servers and skills: the agent does the routine, the decisions and the review are mine."
+      },
+      "realtime": {
+        "title": "Real-time",
+        "text": "WebSocket dashboards: the data arrives and the interface comes alive."
+      }
+    }
+  },
+  "about": {
+    "overline": "About",
+    "titleBefore": "I’m a frontend engineer who",
+    "titleHighlight": "designs, too,",
+    "titleAfter": "so nothing gets lost between the mockup and the code.",
+    "text": "For seven years I’ve been designing and building complex interfaces: e-commerce with a 3D configurator across 50,000+ products, visual editors, drag-and-drop systems, real-time WebSocket dashboards, CRMs and SSO. I make architecture calls, build reusable component foundations, hire and mentor developers — and work with AI tools: Cursor, Claude Code, MCP and my own skills.",
+    "photo": "Hi, that’s me",
+    "badge": "Frontend engineer · Vue · Nuxt",
+    "photoAlt": "Portrait of Alexandr Zhukov",
+    "principles": [
+      {
+        "title": "Design → code, nothing lost",
+        "text": "I design and I build: spacing, rhythm and motion reach production exactly as intended.",
+        "tag": "Design"
+      },
+      {
+        "title": "Architecture that grows",
+        "text": "Feature-Sliced layers, typed contracts and a shared component base — the project doesn’t sprawl as it grows.",
+        "tag": "Architecture"
+      },
+      {
+        "title": "Motion with a purpose",
+        "text": "GSAP, Three.js and custom shaders: motion explains the interface instead of decorating it.",
+        "tag": "Motion"
+      }
+    ],
+    "jar": "Tools — throw them",
+    "portrait": {
+      "cursor": "Alexandr",
+      "styles": "Colours",
+      "swatches": {
+        "hair": "Hair",
+        "skin": "Skin",
+        "hoodie": "Hoodie",
+        "wall": "Wall"
+      }
+    }
+  },
+  "experience": {
+    "overline": "Experience",
+    "title": "Seven years in production",
+    "text": "From real-time dashboards and a regional education portal to e-commerce with a 3D configurator and SSO across several products.",
+    "now": "now",
+    "items": {
+      "st": {
+        "company": "Systems & Technologies Group",
+        "role": "Frontend developer, R&D department",
+        "highlights": [
+          "Real-time WebSocket dashboard monitoring 50+ energy meters",
+          "Typed a legacy API with d.ts files and documented 8 device types",
+          "Metering control interfaces on Vue.js with a Node.js backend"
+        ]
+      },
+      "elros": {
+        "company": "ElRos",
+        "role": "Fullstack developer · Vue + 1C-Bitrix",
+        "highlights": [
+          "A regional education system from scratch: UI, REST API, PHP backend and database",
+          "15+ Vue and 20+ custom Bitrix components",
+          "Automated certificates and reports with PHPWord"
+        ]
+      },
+      "bintaga": {
+        "company": "Bintaga Home",
+        "role": "Middle frontend developer",
+        "highlights": [
+          "E-commerce migration from 1C-Bitrix to Nuxt 3 + Go: 50,000+ products, pages 40% faster",
+          "3D configurator on TresJS with 100+ options, and a CMS with 8 WYSIWYG editors",
+          "Hired two developers and mentored two juniors — both passed probation"
+        ]
+      },
+      "ventra": {
+        "company": "Ventra · client: Akrikhin",
+        "role": "Middle frontend developer",
+        "highlights": [
+          "SSO frontend from scratch on Nuxt 4 + shadcn-vue: one entry point for the company’s products",
+          "Accounts, admin panels and CRMs for pharma, including a pharmacy network of 2,000+ users",
+          "A component and form foundation on shadcn-vue + VeeValidate + Valibot for the whole team"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "line1": "Have an idea?",
+    "line2": "I’ll make it",
+    "line3": "noticeable.",
+    "copy": "Copy email",
+    "copied": "Copied!",
+    "builder": {
+      "need": "What you need",
+      "start": "When",
+      "preview": "Message",
+      "needs": {
+        "site": {
+          "label": "Website",
+          "phrase": "a website"
+        },
+        "app": {
+          "label": "Web app",
+          "phrase": "a web app"
+        },
+        "motion": {
+          "label": "3D & motion",
+          "phrase": "3D and motion"
+        },
+        "team": {
+          "label": "Joining the team",
+          "phrase": "a role on our team"
+        }
+      },
+      "starts": {
+        "now": {
+          "label": "As soon as possible",
+          "phrase": "we could start right away"
+        },
+        "month": {
+          "label": "Within a month",
+          "phrase": "starting within a month"
+        },
+        "later": {
+          "label": "Just exploring",
+          "phrase": "just exploring for now"
+        }
+      },
+      "message": "Hi Alexandr! I’d like to talk about {what} — {when}.",
+      "subject": "{what} — from your site",
+      "telegram": "Send on Telegram",
+      "mail": "By email"
+    },
+    "rows": {
+      "telegram": "Telegram",
+      "github": "GitHub",
+      "habr": "Habr",
+      "resume": "Résumé",
+      "education": "Education"
+    },
+    "habrValue": "11 articles · 89,000+ views",
+    "educationValue": "Vladimir Aviation Mechanical College — computer systems"
+  },
+  "footer": {
+    "copyright": "© {year} Alexandr Zhukov",
+    "made": "Design & code — by me",
+    "top": "Back to top",
+    "time": "now"
+  },
+  "project": {
+    "back": "All projects",
+    "type": "Type",
+    "status": "Status",
+    "role": "Role",
+    "stack": "Stack",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "github": "GitHub",
+    "demo": "Demo",
+    "next": "Next project",
+    "notFound": "Project not found",
+    "demoOverline": "Live demo",
+    "demoTitle": "Try {name} right here",
+    "demoRun": "Run the demo",
+    "demoOpen": "Open in a new tab",
+    "demoNote": "Loads only when you ask",
+    "library": {
+      "overline": "By the numbers · GitHub & npm",
+      "title": "{downloads}+ downloads a month — {n}× as many as a year before.",
+      "titlePlain": "{downloads}+ downloads a month.",
+      "total": "Downloads since the first release",
+      "stars": "Stars on GitHub",
+      "releases": "Releases on npm",
+      "latest": "latest v{version}",
+      "dependencies": "Dependencies",
+      "dependenciesNote": "Vue only",
+      "chart": "Monthly npm downloads of {package}",
+      "monthColumn": "Month",
+      "downloadsColumn": "Downloads",
+      "note": "From GitHub and npm, {date}",
+      "copy": "Copy the install command",
+      "copied": "Copied"
+    }
+  }
+}

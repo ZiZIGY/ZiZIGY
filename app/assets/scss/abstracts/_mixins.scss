@@ -1,0 +1,21 @@
+// Hover styles only for devices that really hover, so taps on touch screens don't leave sticky states.
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+// @nuxtjs/color-mode puts `.dark` on <html>, same hook Tailwind's `dark:` variant uses.
+@mixin dark {
+  :where(.dark) & {
+    @content;
+  }
+}
